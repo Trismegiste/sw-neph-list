@@ -13,6 +13,7 @@
         </header>
         <section>{model.Effet}</section>
         <section>{model.Aspect}</section>
+        <footer>page {model.Page}</footer>
     </article>
     <script>
         this.kabbaleList = nephData.get('kabbale')
