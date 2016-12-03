@@ -19,6 +19,7 @@ form {
     margin: 0 0.6em 1em;
 }
 
+// for detail :
 article {
     margin: 0 0.6em 1em;
 }
@@ -32,6 +33,7 @@ article header h2 {
 article header {
     margin-bottom: 1em;
 }
+
 article section {
     margin-bottom: 1em
 }
