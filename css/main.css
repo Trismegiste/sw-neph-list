@@ -18,3 +18,17 @@ footer.terminal {
 form {
     margin: 0 0.6em 1em;
 }
+
+article {
+    margin: 0 0.6em 1em;
+}
+
+article header {
+    font-size: 120%;
+    font-weight: 200;
+    margin-bottom: 1em;
+}
+
+article section {
+    margin-top: 1em
+}
