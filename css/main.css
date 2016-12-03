@@ -7,3 +7,10 @@ footer.terminal {
     margin-bottom: 0.6em;
     font-size: 140%;
 }
+
+/* for spinner */
+#waiting {
+    text-align: center;
+    font-size: 1000%;
+    color: lightgray;
+}
