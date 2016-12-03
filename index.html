@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sciences occultes pour Nephilim-RPG</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="./css/pure-min.css"/>
+        <link rel="stylesheet" href="./css/grids-responsive-min.css"/>
+        <link rel="stylesheet" href="./css/main.css"/>
+        <link rel="stylesheet" href="./css/fontello.css"/>
+        <link rel="stylesheet" href="./css/animation.css"/>
+    </head>
+    <body>
+
+        <div class="content">
+            <div id="waiting" class="pure-g">
+                <div class="pure-u-1">
+                    <i class="icon-spinner animate-spin"></i>
+                </div>
+            </div>
+            <div class="pure-g">
+                <div class="pure-u-sm-1-6 pure-u-md-1-4 pure-u-lg-1-3 pure-u-xl-3-8"></div>
+                <div class="pure-u-1 pure-u-sm-2-3 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-4">
+                    <spa id="mainapp" class="hidden"></spa>
+                </div>
+            </div>
+        </div>
+
+    <my-footer></my-footer>
+
+    <script src="./js/riot+compiler.min.js"></script>
+    <script src="./js/fetch.js"></script>
+
+    <script src="./tag/spa.tag" type="riot/tag"></script>
+    <script src="./tag/list-magie.tag" type="riot/tag"></script>
+    <script src="./tag/list-kabbale.tag" type="riot/tag"></script>
+    <script src="./tag/list-alchimie.tag" type="riot/tag"></script>
+    <script src="./tag/my-footer.tag" type="riot/tag"></script>
+
+    <script>
+        riot.route.start(true);
+        riot.mount('*')
+        riot.route('list')
+    </script>
+</body>
+</html>
