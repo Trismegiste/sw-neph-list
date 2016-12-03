@@ -35,6 +35,7 @@
     <script src="./tag/spa.tag" type="riot/tag"></script>
     <script src="./tag/list-magie.tag" type="riot/tag"></script>
     <script src="./tag/list-kabbale.tag" type="riot/tag"></script>
+    <script src="./tag/detail-kabbale.tag" type="riot/tag"></script>
     <script src="./tag/list-alchimie.tag" type="riot/tag"></script>
     <script src="./tag/my-footer.tag" type="riot/tag"></script>
 
@@ -43,7 +44,7 @@
         nephData.load().then(function () {
             riot.route.start(true);
             riot.mount('*')
-            riot.route('magie')
+            riot.route('kabbale')
         })
     </script>
 </body>

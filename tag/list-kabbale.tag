@@ -8,9 +8,9 @@
         </div>
     </form>
 
-    <table class="pure-table">
+    <table class="pure-table pure-table-striped">
         <tbody>
-            <tr each="{row in found}">
+            <tr each="{row, idx in found}" onclick="{parent.onDetail}">
                 <td>{row.Sort}</td>
                 <td>{row.Monde}</td>
             </tr>
@@ -28,9 +28,14 @@
             for (var k in self.kabbaleList) {
                 var row = self.kabbaleList[k]
                 if (regex.test(row['Sort'])) {
+                    row.pk = k
                     self.found.push(row)
                 }
             }
+        }
+
+        onDetail(e) {
+            riot.route('kabbale/' + e.item.row.pk)
         }
     </script>
 </list-kabbale>

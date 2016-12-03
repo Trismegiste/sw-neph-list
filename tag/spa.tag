@@ -16,6 +16,9 @@
         <div class="pure-u-1-1 {hidden: !isActiveTab('kabbale')}">
             <list-kabbale></list-kabbale>
         </div>
+        <div class="pure-u-1-1 {hidden: !isActiveTab('detail-kabbale')}">
+            <detail-kabbale></detail-kabbale>
+        </div>
         <div class="pure-u-1-1 {hidden: !isActiveTab('alchimie')}">
             <list-alchimie></list-alchimie>
         </div>
