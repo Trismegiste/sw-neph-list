@@ -22,6 +22,9 @@
         <div class="pure-u-1-1 {hidden: !isActiveTab('alchimie')}">
             <list-alchimie></list-alchimie>
         </div>
+        <div class="pure-u-1-1 {hidden: !isActiveTab('detail-alchimie')}">
+            <detail-alchimie></detail-alchimie>
+        </div>
     </div>
     <script>
         this.menuTab = [
