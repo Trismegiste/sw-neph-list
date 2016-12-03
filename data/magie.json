@@ -1,3 +1,698 @@
-{
-    "name": "flo"
-}
+[
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Architecture > Structure",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit le plan de construction dans la zone, y compris les zones cachées"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Intelligence > Les pensées",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Pensées de surface"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Livre > Le livre « nom du livre »",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Permet de trouver instantanément un livre précis dans la zone. Si plusieurs livres ont le même nom, ils « clignotent » tous en même temps."
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Longue-vue > Lunette",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Le mage bénéficie d'une réduction de malus du portée de 1 (2 sur Relance)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Mélancolie > Nostalgie > Passé",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Tu te prends pour un R+C ?"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Mémoire > Souvenir",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Perçoit la mémoire est trop général, alors qu'un souvenir peut être défini précisément"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Prévoyance > Prévision > Futur",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Tu te prends pour un R+C ?"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Air",
+        "Chaîne": "Projection > Cinéma > Caméra",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les caméras dans une zone (qu'elles fonctionnent ou non)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Eau",
+        "Chaîne": "Conduite > Voiture",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Permet de poursuivre plus facilement une voiture en filature : bonus de +1 (+2 sur Relance)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Eau",
+        "Chaîne": "Courant > Électricité",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les courants électriques dans la zone (alarmes, gâchette électrique, camera, réseau, téléphone)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Eau",
+        "Chaîne": "Danse > Piste",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les pistes physiques ou magiques dans une zone. Différencier les pistes requiert toutefois la compétence Pistage"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Eau",
+        "Chaîne": "Navigation > Carte > Orientation",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Connaître avec précision les directions cardinales terrestres"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Épée > Combat",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Réduit de 1 (2 sur Relance) le malus de combat contre plusieurs cibles"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Foyer > Domicile",
+        "Cible": "1 cible",
+        "Effet (avec Relance)": "Perçoit dans la zone le lieu que la cible considère comme son domicile (temporaire ou non)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Guerre > Armée > Arme",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les armes dans la zone. Techniquement une carte de crédit peut être une arme financière mais on ne retiendra que les armes de guerre."
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Guerre > Ennemi",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les ennemis du mage (cad : si l'ennemi reconnaissait le mage alors il lui serait hostile). Certains R+C ou synarques peuvent être exclus"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Passion > L'amour",
+        "Cible": "1 cible",
+        "Effet (avec Relance)": "Ciblé sur une personne : indique le lien avec la personne aimée dans la zone"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Poudre > Cartouche > Fusil",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les fusils, fusils d'assaut, mitrailleur tenus à 2 mains etc..."
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Feu",
+        "Chaîne": "Poudre > Cartouche > Tir",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Donne l'équivalent d'une couverture légère (moyenne sur Relance) au Mage sur ses adversaires (pas de cumul de couverture)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Bijou > Or > Riche",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les personnes riches dans la zone"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Chaos > Désordre > Faille de sécurité (analogie foireuse)",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les failles dans un système de surveillance (zone d'ombre, angle mort de caméra…)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Danger",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit dans la zone les dangers immédiats : pas subtil"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Désir",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "Donne un bonus circonstanciel de +1 (+2) pour manipuler la cible"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Dissimulation > Cachette",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Détecte les endroits qui peuvent servir de cachettes (utilisées ou non)"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Mystère > Initié",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les humains conscients de la nature magique du monde. Un écuyer ignorant ou un synarque de bas niveau ne sont pas détectés"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Rêve > Akasha",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Permet de détecter la présence approximative des Akasha dans la zone"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
+        "Chaîne": "Rêve > Akasha > Porte d'Akasha",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Donne la position de la porte d'un akasha précis"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Terre",
+        "Chaîne": "Organisation > Hiérarchie",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Permet de percevoir les liens hiérarchiques des personnes dans la zone"
+    },
+    {
+        "Cercle": "1",
+        "Le mage…": "Perçoit",
+        "Élément": "Terre",
+        "Chaîne": "Vie > Santé",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Perçoit les niveaux de blessures"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Manipule",
+        "Élément": "Air",
+        "Chaîne": "Architecture > Mur",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Réarrange un mur ou n'importe quel surface pour y faire un trou temporaire dans lequel le mage peut passer."
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Air",
+        "Chaîne": "Flèche > Arc > Tir",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Le mage augmente son TDD en Tir de 1 (2 sur Relance)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Air",
+        "Chaîne": "Intelligence",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) TDD sur tous les jets de traits liés à l'Intellect"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Air",
+        "Chaîne": "Liberté > Liberticide > Prison",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "Emprisonne la cible avec le sol autour de lui. Jet de Force FD RM du mage (avec relance si relance)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Air",
+        "Chaîne": "Linguistique",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Amplifie les capacités de compréhension d'une langue à ses dérivées proches (dialecte, version antique…)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Air",
+        "Chaîne": "Linguistique",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Déplace les capacités linguistiques d'une cible à l'autre. Pas de duplication."
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Air",
+        "Chaîne": "Linguistique > Mot > Mot de …",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Déplace la terre, des branches, des cailloux ou grave sur un mur la forme d'un seul mot."
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Air",
+        "Chaîne": "Lumière",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Inflige les malus d'obscurité -1 (-2)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Manipule",
+        "Élément": "Air",
+        "Chaîne": "Mélancolie > Nostalgie > Passé",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Tu te prends pour un R+C ?"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Air",
+        "Chaîne": "Mémoire > Souvenir",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Diminue la persistance d'un souvenir précis des cibles. Reviens après la durée ou suite à un rappel extérieur"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Air",
+        "Chaîne": "Plume > Encre",
+        "Cible": "objet",
+        "Effet (avec Relance)": "Permet de réarranger l'encre d'un texte écrit ou imprimé sur un support pour tracer ce qu'on veut"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Air",
+        "Chaîne": "Rhétorique",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Augmente les jets de Persuasion +1 (+2) TDD"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Air",
+        "Chaîne": "Spiritualité > Âme",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) TDD sur tous les jets de traits liés à l'Âme"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Air",
+        "Chaîne": "Vent > Atmosphère > Pression",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Diminue la pression dans un contenant : un pneu, par exemple, sera quasiment à plat"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Eau",
+        "Chaîne": "Commerce > Denier > Synarque",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Projette un synarque dans la zone : dégâts KAD+1d4 (+1d6)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Eau",
+        "Chaîne": "Érosion > Usure > Fatigue",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Réduit de 1 (2 sur Relance) le malus de fatigue"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Eau",
+        "Chaîne": "Mouvement > Allure",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Augmente de 50 % (100 % sur Relance) l'Allure d'un humain ou d'un véhicule"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Eau",
+        "Chaîne": "Oubli > Oubli de...",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Amplifie la capacité d'une cible à oublier un événement récent"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Eau",
+        "Chaîne": "Souplesse > Agilité",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) TDD sur tous les jets de traits liés à l'Agilité. La Parade n'est donc pas impactée"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Manipule",
+        "Élément": "Eau",
+        "Chaîne": "Verre > Vitre",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Déplace ou manipule une vitre dans la zone pour y faire un trou"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Épée > Combat",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Le mage augmente son TDD en Combat de 1 (2 sur Relance) (pas d'effet sur la Parade)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Épée > Combat > Parade",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Le mage augmente sa propre Parade de 1 (2 sur Relance)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Feu",
+        "Chaîne": "Épée > Myste",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Projette un myste dans la zone : dégâts KAD+1d4 (+1d6)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Feu",
+        "Chaîne": "Exaltation > Dévotion > Dévotion pour le mage",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Amplifie un sentiment de dévotion religieuse entre la cible et le mage. Le sentiment doit exister un minimum"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Foyer > Chaleur",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Augmente la température de +10° (+20° sur Relance) dans la zone"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Feu",
+        "Chaîne": "Fureur > Combativité",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Donne +1 (+2) sur le jet pour se dé-secouer"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Feu",
+        "Chaîne": "Justice > Sentence > Prison",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "Emprisonne la cible avec le sol autour de lui. Jet de Force FD RM du mage (avec relance si relance)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Feu",
+        "Chaîne": "Justice > Suspect > Suspicion",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Réduit la méfiance de la cible vis-à-vis du mage"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Poudre > Cartouche > Tir",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Le mage augmente son TDD en Tir de 1 (2 sur Relance)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Feu",
+        "Chaîne": "Rapidité > Vitesse",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Réduit de 1 (2 sur Relance) le malus de d'action multiple"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Rapidité > Vitesse > Allure",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Augmente de 50 % (100 % sur Relance) l'Allure d'un humain ou d'un véhicule"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Feu",
+        "Chaîne": "Rapidité > Vivacité",
+        "Cible": "1 cible",
+        "Effet (avec Relance)": "Donne l'atout Vif"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Renouveau > Régénération",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Accélère la capacité de guérison naturelle à 3 jours (2 jours si Relance) au lieu de 5 jours. Si lancé après blessure, réduit juste d'un jour."
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Feu",
+        "Chaîne": "Violence > Force",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) TDD sur tous les jets de traits liés à la Force (les dégâts sont donc exclus)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Lune",
+        "Chaîne": "Beauté > Charisme",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) sur le Charisme"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Lune",
+        "Chaîne": "Désir > Attraction > Attraction pour le mage",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Amplifie un sentiment d'attirance entre la cible et le mage. Le sentiment doit exister un minimum"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Lune",
+        "Chaîne": "Dissimulation",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) TDD sur les jets de Discrétion"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Manipule",
+        "Élément": "Lune",
+        "Chaîne": "Maquillage > Apparence",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Permet d'altérer les traits (profanes) du visage comme pour une opération de chirurgie esthétique"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Lune",
+        "Chaîne": "Mystère > Myste",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Projette un myste dans la zone : dégâts KAD+1d4 (+1d6)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Lune",
+        "Chaîne": "Théâtre > Comédie",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "Augmente la capacité de baratin d'un bonus de +1 (+2) TDD"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Terre",
+        "Chaîne": "Bâton > Templier",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Projette un templier dans la zone : dégâts KAD+1d4 (+1d6)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Terre",
+        "Chaîne": "Flore > Arbre",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Déplace un arbre dans la zone : dégâts KAD+1d4 (+1d6)."
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Terre",
+        "Chaîne": "Protection > Sécurité > Serrure",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Ouvre un loquet mécanique de serrure. Ne fonctionne pas sur un digicode ou système biométrique"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Terre",
+        "Chaîne": "Récipient > Coupe > R+C",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Projette un R+C dans la zone : dégâts KAD+1d4 (+1d6)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Terre",
+        "Chaîne": "Soin  > Blessure",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Réduit de 1 (2 sur Relance) le malus de blessure"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Terre",
+        "Chaîne": "Soin > Guérison",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Donne +1 (+2) sur le jet de guérison naturelle"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Diminue",
+        "Élément": "Terre",
+        "Chaîne": "Solidité",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Rend le sol tout mou dans la zone. Jet de sauvegarde d'AGI à chaque round (avec Relance si Relance) pour ne pas être embourbé"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Terre",
+        "Chaîne": "Solidité > Résistance",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "Augmente la résistance de la cible de +1 (+2). Cumulable avec Armure (de SO ou non)"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Déplace",
+        "Élément": "Terre",
+        "Chaîne": "Vie > Animal > Humain\nFaune > Animal > Humain\nVie > Animal > Simulacre",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Déplace un humain/simulacre dans la zone"
+    },
+    {
+        "Cercle": "2",
+        "Le mage…": "Amplifie",
+        "Élément": "Terre",
+        "Chaîne": "Vie > Santé > Vigueur",
+        "Cible": "ciblé",
+        "Effet (avec Relance)": "+1(+2) TDD sur tous les jets de traits liés à la Vigueur. La Résistance n'est donc pas impactée"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Air",
+        "Chaîne": "Flèche > Pointe > Pique\nPlume > Stylo > Stylet",
+        "Cible": "-",
+        "Effet (avec Relance)": "Glaive élémentaire d'Air. Dégâts magiques de 2 dés de KAD"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Eau",
+        "Chaîne": "Vague > Lac",
+        "Cible": "zone",
+        "Effet (avec Relance)": "Crée un lac sur la zone"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Eau",
+        "Chaîne": "Vague > Lame\nEcaille > Poisson > Espadon",
+        "Cible": "-",
+        "Effet (avec Relance)": "Glaive élémentaire d'Eau. Dégâts magiques de 2 dés de KAD"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Feu",
+        "Chaîne": "Épée",
+        "Cible": "-",
+        "Effet (avec Relance)": "Glaive élémentaire de Feu. Dégâts magiques de 2 dés de KAD"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Feu",
+        "Chaîne": "Épée",
+        "Cible": "-",
+        "Effet (avec Relance)": "Crée une épée normale (taille au choix) à partir des champs magiques de Ka-Feu."
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Lune",
+        "Chaîne": "Maquillage > Mouche > Fleuret",
+        "Cible": "-",
+        "Effet (avec Relance)": "Glaive élémentaire de Lune. Dégâts magiques de 2 dés de KAD"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Terre",
+        "Chaîne": "Sculpture > Masse\nAgriculture > Moisson > Faux",
+        "Cible": "-",
+        "Effet (avec Relance)": "Glaive élémentaire de Terre. Dégâts magiques de 2 dés de KAD"
+    },
+    {
+        "Cercle": "3",
+        "Le mage…": "Crée",
+        "Élément": "Terre\nEau",
+        "Chaîne": "Protection > Armure\nEcaille > Cataphracte",
+        "Cible": "-",
+        "Effet (avec Relance)": "Crée une armure protection physique 4 / magique 4"
+    }
+]
