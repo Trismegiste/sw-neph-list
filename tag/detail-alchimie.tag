@@ -20,7 +20,6 @@
 
         var subRoute = riot.route.create()
         subRoute('/alchimie/*', function (pk) {
-            console.log('tout')
             self.parent.activeTab = 'detail-alchimie'
             self.model = self.listing[pk]
             self.parent.update()

@@ -1,5 +1,4 @@
 <list-alchimie>
-
     <form class="pure-form pure-g">
         <div class="pure-u-1">
             <input type="text" name="keyword" class="pure-input-1" onkeyup="{
@@ -38,6 +37,4 @@
             riot.route('alchimie/' + e.item.row.pk)
         }
     </script>
-
-
 </list-alchimie>

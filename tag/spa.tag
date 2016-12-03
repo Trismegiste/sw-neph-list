@@ -13,6 +13,9 @@
         <div class="pure-u-1-1 {hidden: !isActiveTab('magie')}">
             <list-magie></list-magie>
         </div>
+        <div class="pure-u-1-1 {hidden: !isActiveTab('detail-magie')}">
+            <detail-magie></detail-magie>
+        </div>
         <div class="pure-u-1-1 {hidden: !isActiveTab('kabbale')}">
             <list-kabbale></list-kabbale>
         </div>
