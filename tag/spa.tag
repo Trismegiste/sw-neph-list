@@ -1,14 +1,10 @@
 <spa>
-    <nav class="pure-menu pure-menu-horizontal top-menu">
-        <ul class="pure-menu-list">
-            <li each="{tab, i in menuTab}"
-                class="pure-menu-item {pure-menu-selected: parent.isActiveTab(tab.ref)}">
-                <a href="#{tab.ref}" class="pure-menu-link">
-                    <i class="{ tab.title }"></i>
-                </a>
-            </li>
-        </ul>
+    <nav class="pure-g top-menu">
+        <div each="{tab, i in menuTab}" class="pure-u-1-3 {top-menu-selected: parent.isActiveTab(tab.ref)}">
+            <a href="#{tab.ref}"><img src="./img/{tab.ref}.svg" class="pure-img"/></a>
+        </div>
     </nav>
+
     <div class="pure-g">
         <div class="pure-u-1-1 {hidden: !isActiveTab('magie')}">
             <list-magie></list-magie>
@@ -43,7 +39,7 @@
 
         // this to hide waiting spinner
         this.on('mount', function() {
-            document.getElementById('waiting').remove()
+        document.getElementById('waiting').remove()
             document.getElementById('mainapp').className = ''
         })
 

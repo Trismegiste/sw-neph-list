@@ -3,9 +3,13 @@ footer.terminal {
     font-size: 60%;
     text-align: center;
 }
-.top-menu {
-    margin-bottom: 0.6em;
-    font-size: 140%;
+.top-menu img {
+    margin: 1em 2em;
+    opacity: 0.3;
+}
+
+.top-menu .top-menu-selected img {
+    opacity: 1;
 }
 
 /* for spinner */
