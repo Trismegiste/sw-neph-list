@@ -3,6 +3,8 @@ footer.terminal {
     font-size: 60%;
     text-align: center;
 }
+
+/* menu */
 .top-menu img {
     margin: 1em 2em;
     opacity: 0.3;
@@ -19,8 +21,23 @@ footer.terminal {
     color: lightgray;
 }
 
+/* query */
 form {
     margin: 0 0.6em 1em;
+}
+
+.form-label-aligned label {
+    text-align: right;
+    margin-right: 0.3em;
+}
+
+.pure-form input, .pure-form select {
+    margin-bottom: 0.3em;
+}
+
+.pure-form label {
+    display: block;
+    margin-bottom: 0.3em;
 }
 
 /* for detail */
@@ -44,4 +61,17 @@ article section {
 
 article footer {
     text-align: center;
+}
+
+/* printer */
+@media print {
+    .top-menu {
+        display: none;
+    }
+    spa form.pure-form {
+        display: none;
+    }
+    body {
+        font-size: 60%;
+    }
 }

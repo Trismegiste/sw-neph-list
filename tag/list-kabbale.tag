@@ -1,17 +1,32 @@
 <list-kabbale>
-    <form class="pure-form pure-g">
+    <form class="pure-form pure-g form-label-aligned">
         <div class="pure-u-1">
             <input type="text" name="keyword" class="pure-input-1" onkeyup="{
                         onSearch
                     }"/>
         </div>
+        <virtual each="{titre, idx in monde}">
+            <div class="pure-u-1-4">
+                <label>{titre}</label>
+            </div>
+            <div class="pure-u-1-4">
+                <select class="pure-input-1">
+                    <option>--pas--</option>
+                    <option each="{key, val in sephirahOrder}" value="{key}">{key}</option>
+                </select>
+            </div>
+        </virtual>
     </form>
 
     <table class="pure-table pure-table-striped">
         <tbody>
-            <tr each="{row, idx in found}" onclick="{parent.onDetail}">
-                <td>{row.Sort}</td>
+            <tr each="{row, idx in found}" onclick="{
+                        parent.onDetail
+                    }">
                 <td>{row.Monde}</td>
+                <td>{row.Sephirah}</td>
+                <td>{row.Element}</td>
+                <td>{row.Sort}</td>
             </tr>
         </tbody>
     </table>
@@ -19,6 +34,10 @@
     <script>
         this.kabbaleList = nephData.get('kabbale')
         this.found = []
+        this.sephirahOrder = {
+            'Malkut':10,'Yesod':9,'Hod':8,'Netzah':7,'Tipheret':6,'Geburah':5,'Chesed':4,'Binah':3,'Chokmah':2,'Kether':1
+        }
+        this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakasï']
         var self = this
 
         onSearch() {
@@ -31,6 +50,20 @@
                     self.found.push(row)
                 }
             }
+            // sorting
+            self.found.sort(function (a, b) {
+                var cmp = a.Monde.localeCompare(b.Monde)
+                if (cmp != 0) {
+                    return cmp
+                } else {
+                    cmp = self.sephirahOrder[b.Sephirah] - self.sephirahOrder[a.Sephirah]
+                    if (cmp != 0) {
+                        return cmp
+                    } else {
+                        return a.Element.localeCompare(b.Element)
+                    }
+                }
+            })
         }
 
         onDetail(e) {
