@@ -76,6 +76,11 @@ article header h3 {
     margin: 0.3em;
 }
 
+i.dotted-icon:before {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 article section {
     margin: 0.6em 0;
     border: 1px solid gray;
