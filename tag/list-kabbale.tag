@@ -2,11 +2,6 @@
     <form class="pure-form pure-g form-label-aligned" onchange="{
                 onSearch
             }">
-        <div class="pure-u-1">
-            <input type="text" name="keyword" class="pure-input-1" onkeyup="{
-                        onSearch
-                    }"/>
-        </div>
         <virtual each="{titre, idx in monde}">
             <div class="pure-u-1-4">
                 <label>{titre}</label>
@@ -18,6 +13,11 @@
                 </select>
             </div>
         </virtual>
+        <div class="pure-u-1">
+            <input type="text" name="keyword" class="pure-input-1" onkeyup="{
+                        onSearch
+                    }"/>
+        </div>
     </form>
 
     <table class="pure-table pure-table-striped">
@@ -25,9 +25,7 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
-                <td>{row.Monde}</td>
-                <td>{row.Sephirah}</td>
-                <td>{row.Element}</td>
+                <td><img src="./img/{row.Element.toLowerCase()}.svg"/></td>
                 <td>{row.Sort}</td>
             </tr>
         </tbody>
