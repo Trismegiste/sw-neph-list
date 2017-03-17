@@ -8,7 +8,7 @@
             </div>
             <div class="pure-u-1-4">
                 <select class="pure-input-1" value="{ config[idx] }" name="filter">
-                    <option>--pas--</option>
+                    <option value="0">--rien--</option>
                     <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
                 </select>
             </div>
@@ -38,17 +38,23 @@
             'Malkut': 10, 'Yesod': 9, 'Hod': 8, 'Netzah': 7, 'Tipheret': 6, 'Geburah': 5, 'Chesed': 4, 'Binah': 3, 'Chokmah': 2, 'Kether': 1
         }
         this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï']
-        this.config = [1,1]
         var self = this
+        // client config
+        if (null === localStorage.getItem('kabbale-config')) {
+            localStorage.setItem('kabbale-config', '[]')
+        }
+        this.config = JSON.parse(localStorage.getItem('kabbale-config'))
 
         onSearch() {
             var mondeFilter = {}
             for (var idx in self.filter) {
                 var sel = self.filter[idx]
+                self.config[idx] = sel.value
                 if (sel.value > 0) {
                     mondeFilter[self.monde[idx]] = sel.value
                 }
             }
+            localStorage.setItem('kabbale-config', JSON.stringify(self.config))
 
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []
