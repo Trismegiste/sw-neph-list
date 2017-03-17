@@ -49,6 +49,10 @@ list-kabbale td img {
     width: 1em;
 }
 
+list-alchimie form img {
+    width: 2em;
+}
+
 /* for detail */
 article {
     margin: 0 0.6em 1em;
