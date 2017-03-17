@@ -57,7 +57,14 @@
             self.found = []
             for (var k in self.kabbaleList) {
                 var row = self.kabbaleList[k]
-                if ((mondeFilter[row.Monde] !== undefined)
+                if (row.Monde === 'Tous') {
+                    for (var k in mondeFilter) {
+                        if (self.sephirahOrder[row.Sephirah] >= mondeFilter[k]) {
+                            self.found.push(row)
+                            break;
+                        }
+                    }
+                } else if ((mondeFilter[row.Monde] !== undefined)
                         && (self.sephirahOrder[row.Sephirah] >= mondeFilter[row.Monde])) {
                     if (regex.test(row['Sort'])) {
                         row.pk = k
