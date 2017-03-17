@@ -51,7 +51,6 @@
                     mondeFilter[self.monde[idx]] = sel.value
                 }
             }
-            console.log(mondeFilter)
 
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []

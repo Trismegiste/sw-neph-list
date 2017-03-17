@@ -10,7 +10,7 @@
                     <img src="./img/sephirah.svg"/>
                 </div>
                 <div class="pure-u-1-3">
-                    <img src="./img/{model.Element.toLowerCase()}.svg"/>
+                    <img if="{model.Element}" src="./img/{model.Element.toLowerCase()}.svg"/>
                 </div>
                 <div class="pure-u-1-3">
                     <h2>{model.Monde}</h2>
@@ -26,7 +26,7 @@
                 <div class="pure-u-1-3">
                     <h3>INI</h3>
                     d{ convertKa(model.Ka).dice }
-                    <virtual each="{ convertKa(model.Ka).puce }">&ofcir;</virtual>
+                    <virtual each="{ convertKa(model.Ka).puce }"><i class="icon-circle"></i></virtual>
                 </div>
                 <div class="pure-u-1-3">
                     <h3>Portée</h3>
