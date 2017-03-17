@@ -2,8 +2,11 @@
     <form class="pure-form pure-g" onChange="{
                 onSearch
             }">
-        <div class="pure-u-1-5" each="{ substanc in laboratoire }">
-            <label><img src="./img/outil/{substanc.toLowerCase()}.svg"/><input type="checkbox" name="laboChoice"/></label>
+        <div class="pure-u-1-5" each="{ substanc, idx in laboratoire }">
+            <label>
+                <img src="./img/outil/{substanc.toLowerCase()}.svg"/>
+                <input type="checkbox" name="laboChoice" checked="{ config[idx] }"/>
+            </label>
         </div>
         <div class="pure-u-1">
             <input type="text" name="keyword" class="pure-input-1" onkeyup="{
@@ -28,16 +31,23 @@
         this.laboratoire = ['Métal', 'Liqueur', 'Vapeur', 'Poudre', 'Ambre']
         this.found = []
         var self = this
+        // client config
+        if (null === localStorage.getItem('alchimie-config')) {
+            localStorage.setItem('alchimie-config', '[]')
+        }
+        this.config = JSON.parse(localStorage.getItem('alchimie-config'))
+
 
         onSearch() {
             var substance = []
             for (var idx in self.laboChoice) {
                 var sel = self.laboChoice[idx]
+                self.config[idx] = sel.checked
                 if (sel.checked) {
                     substance.push(self.laboratoire[idx])
                 }
             }
-            //console.log(substance)
+            localStorage.setItem('alchimie-config', JSON.stringify(self.config))
 
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []
