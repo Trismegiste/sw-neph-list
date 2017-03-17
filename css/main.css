@@ -70,6 +70,7 @@ article header h2 {
     font-weight: 100;
     margin-bottom: 1em;
     margin-top: 0;
+    text-transform: capitalize;
 }
 
 article header h3 {

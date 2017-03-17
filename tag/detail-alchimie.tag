@@ -5,7 +5,7 @@
             <div  class="pure-g">
                 <div class="pure-u-1-3">
                     <svg width="2.6em" height="2.6em">
-                    <circle cx="1.3em" cy="1.3em" r="1.1em" stroke="black" stroke-width="3" fill="white" />
+                        <circle cx="1.3em" cy="1.3em" r="1.2em" stroke="gray" stroke-width="1" fill="{extractColor(model.Cercle)}" />
                     </svg>
                 </div>
                 <div class="pure-u-1-3">
@@ -15,7 +15,7 @@
                     <img if="{model.Element != undefined }" src="./img/{model.Element.toLowerCase()}.svg"/>
                 </div>
                 <div class="pure-u-1-3">
-                    <h2>{model.Cercle}</h2>
+                    <h2>{extractName(model.Cercle)}</h2>
                 </div>
                 <div class="pure-u-1-3">
                     <h2>{model.Substance}</h2>
@@ -42,6 +42,12 @@
     <script>
         this.listing = nephData.get('alchimie')
         this.model = {}
+        this.circleParam = [
+            {},
+            {
+
+            }
+        ]
         var self = this
 
         var subRoute = riot.route.create()
@@ -50,5 +56,18 @@
             self.model = self.listing[pk]
             self.parent.update()
         })
+
+        extractName(circle) {
+            var idx = circle.slice(0, 1)
+
+            return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
+        }
+
+        extractColor(circle) {
+            var idx = circle.slice(0, 1)
+
+            return [[], 'black', 'white', 'red'][idx]
+        }
+
     </script>
 </detail-alchimie>
