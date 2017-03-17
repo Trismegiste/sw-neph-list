@@ -77,6 +77,12 @@
             self.found.sort(function (a, b) {
                 var cmp = a.Monde.localeCompare(b.Monde)
                 if (cmp != 0) {
+                    if (a.Monde === 'Tous') {
+                        return 1
+                    } else if (b.Monde === 'Tous') {
+                        return -1
+                    }
+
                     return cmp
                 } else {
                     cmp = self.sephirahOrder[b.Sephirah] - self.sephirahOrder[a.Sephirah]
