@@ -31,20 +31,20 @@
             {ref: 'kabbale', title: 'icon-kabbale'},
             {ref: 'alchimie', title: 'icon-alchimie'}
         ]
-        this.activeTab = 'alchimie'
+        this.activeTab = 'kabbale'
+        var self = this
 
         isActiveTab(ref) {
-            return ref === this.activeTab
+            return ref === self.activeTab
         }
 
         // this to hide waiting spinner
         this.on('mount', function() {
-        document.getElementById('waiting').remove()
+            document.getElementById('waiting').remove()
             document.getElementById('mainapp').className = ''
         })
 
         var subRoute = riot.route.create()
-        var self = this
         this.menuTab.forEach(function(tab) {
             subRoute('/' + tab.ref, function() {
                 self.activeTab = tab.ref
