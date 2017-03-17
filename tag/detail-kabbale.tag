@@ -5,17 +5,24 @@
             <div  class="pure-g">
                 <div class="pure-u-1-3">
                     <img src="./img/mdk.svg"/>
-                    <h2>{model.Monde}</h2>
                 </div>
                 <div class="pure-u-1-3">
                     <img src="./img/sephirah.svg"/>
+                </div>
+                <div class="pure-u-1-3">
+                    <img src="./img/{model.Element.toLowerCase()}.svg"/>
+                </div>
+                <div class="pure-u-1-3">
+                    <h2>{model.Monde}</h2>
+                </div>
+                <div class="pure-u-1-3">
                     <h2>{model.Sephirah}</h2>
                 </div>
                 <div class="pure-u-1-3">
-                    <img src="./img/feu.svg"/>
-                    <h2>{model.Element}</h2>
+                        <h2>{model.Element}</h2>
                 </div>
             </div>
+
             <div  class="pure-g">
                 <div class="pure-u-1-3">
                     INI: d{ convertKa(model.Ka).dice }
