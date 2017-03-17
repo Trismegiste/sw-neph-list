@@ -4,6 +4,9 @@
             <h1>{model.Sort}</h1>
             <div  class="pure-g">
                 <div class="pure-u-1-3">
+                    <svg width="2.6em" height="2.6em">
+                    <circle cx="1.3em" cy="1.3em" r="1.1em" stroke="black" stroke-width="3" fill="white" />
+                    </svg>
                 </div>
                 <div class="pure-u-1-3">
                     <img if="{model.Substance != undefined }" src="./img/{model.Substance.toLowerCase()}.svg"/>
