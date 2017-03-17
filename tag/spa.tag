@@ -1,7 +1,7 @@
 <spa>
     <nav class="pure-g top-menu">
         <div each="{tab, i in menuTab}" class="pure-u-1-3 {top-menu-selected: parent.isActiveTab(tab.ref)}">
-            <a href="#{tab.ref}"><img src="./img/{tab.ref}.svg" class="pure-img"/></a>
+            <a href="#{tab.ref}"><img src="./img/{tab.ref}.svg"/></a>
         </div>
     </nav>
 

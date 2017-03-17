@@ -5,8 +5,13 @@ footer.terminal {
 }
 
 /* menu */
+.top-menu {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
 .top-menu img {
-    margin: 1em 2em;
+    width: 5em;
     opacity: 0.3;
 }
 
@@ -45,10 +50,25 @@ article {
     margin: 0 0.6em 1em;
 }
 
+article header {
+    text-align: center;
+}
+
+article header img {
+    width: 4em;
+}
+
+article header h1 {
+    font-size: 130%;
+    font-weight: 100;
+    margin-bottom: 1em;
+}
+
 article header h2 {
     font-size: 120%;
-    font-weight: 200;
+    font-weight: 100;
     margin-bottom: 1em;
+    margin-top: 0;
 }
 
 article header {
