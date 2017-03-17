@@ -17,8 +17,8 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
+                <td><img src="./img/elem/{row.Element.toLowerCase()}.svg"/></td>
                 <td>{row.Sort}</td>
-                <td>{row.Substance}</td>
             </tr>
         </tbody>
     </table>
