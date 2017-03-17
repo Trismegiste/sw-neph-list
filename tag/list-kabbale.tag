@@ -25,7 +25,7 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
-                <td><img src="./img/{row.Element.toLowerCase()}.svg"/></td>
+                <td><img src="./img/elem/{row.Element.toLowerCase()}.svg"/></td>
                 <td>{row.Sort}</td>
             </tr>
         </tbody>
@@ -38,7 +38,7 @@
             'Malkut': 10, 'Yesod': 9, 'Hod': 8, 'Netzah': 7, 'Tipheret': 6, 'Geburah': 5, 'Chesed': 4, 'Binah': 3, 'Chokmah': 2, 'Kether': 1
         }
         this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï']
-        this.config = [7]
+        this.config = [1,1]
         var self = this
 
         onSearch() {

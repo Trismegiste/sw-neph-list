@@ -1,18 +1,18 @@
 <detail-alchimie>
-    <article>
+    <article if="{model !== undefined }">
         <header>
             <h1>{model.Sort}</h1>
             <div  class="pure-g">
                 <div class="pure-u-1-3">
                     <svg width="2.6em" height="2.6em">
-                        <circle cx="1.3em" cy="1.3em" r="1.2em" stroke="gray" stroke-width="1" fill="{extractColor(model.Cercle)}" />
+                    <circle cx="1.3em" cy="1.3em" r="1.2em" stroke="gray" stroke-width="1" fill="{extractColor(model.Cercle)}" />
                     </svg>
                 </div>
                 <div class="pure-u-1-3">
-                    <img if="{model.Substance != undefined }" src="./img/{model.Substance.toLowerCase()}.svg"/>
+                    <img src="./img/outil/{model.Substance.toLowerCase()}.svg"/>
                 </div>
                 <div class="pure-u-1-3">
-                    <img if="{model.Element != undefined }" src="./img/{model.Element.toLowerCase()}.svg"/>
+                    <img src="./img/elem/{model.Element.toLowerCase()}.svg"/>
                 </div>
                 <div class="pure-u-1-3">
                     <h2>{extractName(model.Cercle)}</h2>
@@ -41,13 +41,6 @@
     </article>
     <script>
         this.listing = nephData.get('alchimie')
-        this.model = {}
-        this.circleParam = [
-            {},
-            {
-
-            }
-        ]
         var self = this
 
         var subRoute = riot.route.create()

@@ -1,5 +1,5 @@
 <detail-kabbale>
-    <article>
+    <article if="{model !== undefined }">
         <header>
             <h1>{model.Sort}</h1>
             <div  class="pure-g">
@@ -10,7 +10,7 @@
                     <img src="./img/sephirah.svg"/>
                 </div>
                 <div class="pure-u-1-3">
-                    <img if="{model.Element != undefined }" src="./img/{model.Element.toLowerCase()}.svg"/>
+                    <img src="./img/elem/{model.Element.toLowerCase()}.svg"/>
                 </div>
                 <div class="pure-u-1-3">
                     <h2>{model.Monde}</h2>
@@ -44,7 +44,6 @@
     </article>
     <script>
         this.kabbaleList = nephData.get('kabbale')
-        this.model = {}
         var self = this
 
         convertKa(ka) {
