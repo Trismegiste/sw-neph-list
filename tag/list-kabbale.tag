@@ -39,7 +39,7 @@
         this.sephirahOrder = {
             'Malkut': 10, 'Yesod': 9, 'Hod': 8, 'Netzah': 7, 'Tipheret': 6, 'Geburah': 5, 'Chesed': 4, 'Binah': 3, 'Chokmah': 2, 'Kether': 1
         }
-        this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï'] // ne pas oublier 'Tous' !
+        this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï']
         this.config = [7]
         var self = this
 
@@ -51,22 +51,23 @@
                     mondeFilter[self.monde[idx]] = sel.value
                 }
             }
-            //console.log(mondeFilter)
+            console.log(mondeFilter)
 
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []
             for (var k in self.kabbaleList) {
                 var row = self.kabbaleList[k]
-                if (row.Monde === 'Tous') {
-                    for (var k in mondeFilter) {
-                        if (self.sephirahOrder[row.Sephirah] >= mondeFilter[k]) {
-                            self.found.push(row)
-                            break;
+                if (regex.test(row['Sort']) || regex.test(row['Effet'])) {
+                    if (row.Monde === 'Tous') {
+                        for (var i in mondeFilter) {
+                            if (self.sephirahOrder[row.Sephirah] >= mondeFilter[i]) {
+                                row.pk = k
+                                self.found.push(row)
+                                break;
+                            }
                         }
-                    }
-                } else if ((mondeFilter[row.Monde] !== undefined)
-                        && (self.sephirahOrder[row.Sephirah] >= mondeFilter[row.Monde])) {
-                    if (regex.test(row['Sort'])) {
+                    } else if ((mondeFilter[row.Monde] !== undefined)
+                            && (self.sephirahOrder[row.Sephirah] >= mondeFilter[row.Monde])) {
                         row.pk = k
                         self.found.push(row)
                     }

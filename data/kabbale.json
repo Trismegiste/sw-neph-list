@@ -1191,7 +1191,7 @@
         "Ka": 12,
         "Portée": "Kabbaliste",
         "Durée": "-",
-        "Effet": "Posent armes/armures (x6) au pied du Kabbaliste (dégâts For+d4+4, Armure 4). Peut utiliser et confier à d'autres.",
+        "Effet": "Posent armes/armures (x6) au pied du Kabbaliste (dégâts For+d6+2, Armure 4). Peut utiliser et confier à d'autres.",
         "Aspect": "Créatures comme gladiateurs antiques"
     },
     {
