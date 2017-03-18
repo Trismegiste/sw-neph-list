@@ -2,13 +2,15 @@
     <form class="pure-form pure-g form-label-aligned" onchange="{
                 onSearch
             }">
-        <virtual each="{titre, idx in monde}">
+        <virtual each="{titre in monde}">
             <div class="pure-u-1-4">
                 <label>{titre}</label>
             </div>
             <div class="pure-u-1-4">
-                <select class="pure-input-1" value="{ config[idx] }" name="filter">
-                    <option value="0"></option>
+                <select class="pure-input-1" value="{ config[titre] }" name="filter" onchange="{
+                            parent.onChangeConfig
+                        }">
+                    <option value="11"></option>
                     <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
                 </select>
             </div>
@@ -38,18 +40,16 @@
         this.monde = nephData.monde
         var self = this
         // client config
-        this.config = myConfig.read('kabbale-config', [])
+        this.config = myConfig.read('kabbale-config', {})
+
+        this.onChangeConfig = function (event) {
+            var mondeSelect = event.item
+            self.config[mondeSelect.titre] = event.target.value
+            myConfig.write('kabbale-config', self.config)
+        }
 
         this.onSearch = function () {
-            var mondeFilter = {}
-            for (var idx in self.filter) {
-                var sel = self.filter[idx]
-                self.config[idx] = sel.value
-                if (sel.value > 0) {
-                    mondeFilter[self.monde[idx]] = sel.value
-                }
-            }
-            myConfig.write('kabbale-config', self.config)
+            var mondeFilter = self.config
 
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []
