@@ -4,8 +4,7 @@
             }">
         <div class="pure-u-1-5" each="{ substanc, idx in laboratoire }">
             <label>
-                <img src="./img/outil/{substanc.toLowerCase()}.svg"/>
-                <input type="checkbox" name="laboChoice" checked="{ config[idx] }"/>
+                <img src="./img/outil/{substanc.toLowerCase()}.svg"/><input type="checkbox" name="laboChoice" checked="{ config[idx] }"/>
             </label>
         </div>
         <div class="pure-u-1">

@@ -10,8 +10,9 @@
     <table class="pure-table pure-table-striped">
         <tbody>
             <tr each="{row, idx in found}" onclick="{parent.onDetail}">
+                <td><img src="./img/elem/{row['Élément'].toLowerCase()}.svg"/></td>
+                <td>{row['Le mage…']}</td>
                 <td>{row['Chaîne']}</td>
-                <td>{row['Élément']}</td>
             </tr>
         </tbody>
     </table>
