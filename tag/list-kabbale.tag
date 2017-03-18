@@ -8,7 +8,7 @@
             </div>
             <div class="pure-u-1-4">
                 <select class="pure-input-1" value="{ config[idx] }" name="filter">
-                    <option value="0">--rien--</option>
+                    <option value="0"></option>
                     <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
                 </select>
             </div>
