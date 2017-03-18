@@ -1,8 +1,13 @@
 <spa>
-    <nav class="pure-g top-menu">
-        <div each="{tab, i in menuTab}" class="pure-u-1-3 {top-menu-selected: parent.isActiveTab(tab.ref)}">
-            <a href="#{tab.ref}"><img src="./img/{tab.ref}.svg"/></a>
-        </div>
+    <nav class="pure-menu pure-menu-horizontal top-menu">
+        <ul class="pure-menu-list">
+            <li each="{tab, i in menuTab}"
+                class="pure-menu-item {pure-menu-selected: parent.isActiveTab(tab.ref)}">
+                <a href="#{tab.ref}" class="pure-menu-link">
+                    { tab.title }
+                </a>
+            </li>
+        </ul>
     </nav>
 
     <div class="pure-g">
@@ -27,9 +32,9 @@
     </div>
     <script>
         this.menuTab = [
-            {ref: 'magie', title: 'icon-heka'},
-            {ref: 'kabbale', title: 'icon-kabbale'},
-            {ref: 'alchimie', title: 'icon-alchimie'}
+            {ref: 'magie', title: 'Magie'},
+            {ref: 'kabbale', title: 'Kabbale'},
+            {ref: 'alchimie', title: 'Alchimie'}
         ]
         this.activeTab = 'kabbale'
         var self = this

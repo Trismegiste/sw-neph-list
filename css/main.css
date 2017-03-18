@@ -7,16 +7,8 @@ footer.terminal {
 /* menu */
 .top-menu {
     text-align: center;
-    margin: 0.6em 0;
-}
-
-.top-menu img {
-    width: 4em;
-    opacity: 0.3;
-}
-
-.top-menu .top-menu-selected img {
-    opacity: 1;
+    margin-bottom: 1em;
+    font-size: 120%
 }
 
 /* for spinner */
