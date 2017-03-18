@@ -749,7 +749,7 @@
         "Élément": "Terre",
         "Chaîne": "Protection > Armure",
         "Cible": "-",
-        "Effet (avec Relance)": "Crée une armure physique de 3 (4 sur Relance)"
+        "Effet (avec Relance)": "Crée une armure physique de 4 (5 sur Relance)"
     },
     {
         "Cercle": 3,
@@ -765,6 +765,6 @@
         "Élément": "Eau",
         "Chaîne": "Écaille > Cataphracte",
         "Cible": "-",
-        "Effet (avec Relance)": "Crée une armure physique de 3 (4 sur Relance)"
+        "Effet (avec Relance)": "Crée une armure physique de 4 (5 sur Relance)"
     }
 ]
