@@ -45,7 +45,7 @@
         }
         this.config = JSON.parse(localStorage.getItem('kabbale-config'))
 
-        onSearch() {
+        this.onSearch = function () {
             var mondeFilter = {}
             for (var idx in self.filter) {
                 var sel = self.filter[idx]
@@ -99,7 +99,7 @@
             })
         }
 
-        onDetail(e) {
+        this.onDetail = function (e) {
             riot.route('kabbale/' + e.item.row.pk)
         }
     </script>

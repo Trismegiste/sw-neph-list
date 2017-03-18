@@ -37,7 +37,7 @@
         this.config = JSON.parse(localStorage.getItem('alchimie-config'))
 
 
-        onSearch() {
+        this.onSearch = function () {
             var substance = []
             for (var idx in self.laboChoice) {
                 var sel = self.laboChoice[idx]
@@ -61,7 +61,7 @@
             }
         }
 
-        onDetail(e) {
+        this.onDetail = function (e) {
             riot.route('alchimie/' + e.item.row.pk)
         }
     </script>

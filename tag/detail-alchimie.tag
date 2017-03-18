@@ -50,13 +50,13 @@
             self.parent.update()
         })
 
-        extractName(circle) {
+        this.extractName = function (circle) {
             var idx = circle.slice(0, 1)
 
             return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
         }
 
-        extractColor(circle) {
+        this.extractColor = function (circle) {
             var idx = circle.slice(0, 1)
 
             return [[], 'black', 'white', 'red'][idx]

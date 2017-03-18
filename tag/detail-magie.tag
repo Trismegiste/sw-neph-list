@@ -30,7 +30,7 @@
             self.parent.update()
         })
 
-        explodeChaine(str) {
+        this.explodeChaine = function (str) {
             return str.split("\n")
         }
     </script>

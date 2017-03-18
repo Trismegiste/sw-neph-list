@@ -9,7 +9,9 @@
 
     <table class="pure-table pure-table-striped">
         <tbody>
-            <tr each="{row, idx in found}" onclick="{parent.onDetail}">
+            <tr each="{row, idx in found}" onclick="{
+                        parent.onDetail
+                    }">
                 <td><img src="./img/elem/{row['Élément'].toLowerCase()}.svg"/></td>
                 <td>{row['Le mage…']}</td>
                 <td>{row['Chaîne']}</td>
@@ -22,7 +24,7 @@
         this.found = []
         var self = this
 
-        onSearch() {
+        this.onSearch = function () {
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []
             for (var k in self.listing) {
@@ -34,7 +36,7 @@
             }
         }
 
-        onDetail(e) {
+        this.onDetail = function (e) {
             riot.route('magie/' + e.item.row.pk)
         }
     </script>

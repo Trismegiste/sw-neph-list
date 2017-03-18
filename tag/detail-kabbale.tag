@@ -19,7 +19,7 @@
                     <h2>{model.Sephirah}</h2>
                 </div>
                 <div class="pure-u-1-3">
-                        <h2>{model.Element}</h2>
+                    <h2>{model.Element}</h2>
                 </div>
             </div>
             <div  class="pure-g">
@@ -46,7 +46,7 @@
         this.kabbaleList = nephData.get('kabbale')
         var self = this
 
-        convertKa(ka) {
+        this.convertKa = function (ka) {
             var dotted = [];
             for (var k = 0; k < ((ka - 1) % 5); k++) {
                 dotted.push(true)
