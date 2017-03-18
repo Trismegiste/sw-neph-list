@@ -1,5 +1,5 @@
 <list-kabbale>
-    <form class="pure-form pure-g form-label-aligned">
+    <form class="pure-form pure-g form-label-aligned" onsubmit="return false">
         <virtual each="{titre in monde}">
             <div class="pure-u-1-4">
                 <label>{titre}</label>
