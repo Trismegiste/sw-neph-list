@@ -4,7 +4,7 @@
             <h1>{model.Sort}</h1>
             <div  class="pure-g">
                 <div class="pure-u-1-3">
-                    <img src="./img/mdk.svg"/>
+                    <img src="./img/mdk/{model.Monde.toLowerCase()}.svg"/>
                 </div>
                 <div class="pure-u-1-3">
                     <img src="./img/sephirah.svg"/>
