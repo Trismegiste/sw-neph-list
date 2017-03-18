@@ -38,10 +38,7 @@
         this.monde = nephData.monde
         var self = this
         // client config
-        if (null === localStorage.getItem('kabbale-config')) {
-            localStorage.setItem('kabbale-config', '[]')
-        }
-        this.config = JSON.parse(localStorage.getItem('kabbale-config'))
+        this.config = myConfig.read('kabbale-config', [])
 
         this.onSearch = function () {
             var mondeFilter = {}
@@ -52,7 +49,7 @@
                     mondeFilter[self.monde[idx]] = sel.value
                 }
             }
-            localStorage.setItem('kabbale-config', JSON.stringify(self.config))
+            myConfig.write('kabbale-config', self.config)
 
             var regex = new RegExp(self.keyword.value, 'i')
             self.found = []

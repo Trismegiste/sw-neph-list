@@ -33,6 +33,7 @@
     <script src="./js/riot+compiler.min.js"></script>
     <script src="./js/fetch.js"></script>
     <script src="./js/NephTable.js"></script>
+    <script src="./js/LocalConfig.js"></script>
 
     <script src="./tag/spa.tag" type="riot/tag"></script>
     <script src="./tag/list-magie.tag" type="riot/tag"></script>
@@ -45,6 +46,7 @@
 
     <script>
         var nephData = new NephTable('./data/')
+        var myConfig = new LocalConfig()
         nephData.load().then(function () {
             riot.route.start(true);
             riot.mount('*')
