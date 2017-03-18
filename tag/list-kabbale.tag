@@ -1,7 +1,5 @@
 <list-kabbale>
-    <form class="pure-form pure-g form-label-aligned" onchange="{
-                onSearch
-            }">
+    <form class="pure-form pure-g form-label-aligned">
         <virtual each="{titre in monde}">
             <div class="pure-u-1-4">
                 <label>{titre}</label>
@@ -45,11 +43,16 @@
             var mondeSelect = event.item
             self.config[mondeSelect.titre] = parseInt(event.target.value)
             myConfig.write('kabbale-config', self.config)
+            self.trigger('search')
         }
 
-        this.onSearch = function () {
+        this.on('search', function () {
             self.found = nephData.findInvoc(self.keyword.value, self.config)
             nephData.sortInvoc(self.found)
+        })
+
+        this.onSearch = function () {
+            self.trigger('search')
         }
 
         this.onDetail = function (e) {
