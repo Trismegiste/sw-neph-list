@@ -34,10 +34,8 @@
     <script>
         this.kabbaleList = nephData.get('kabbale')
         this.found = []
-        this.sephirahOrder = {
-            'Malkut': 10, 'Yesod': 9, 'Hod': 8, 'Netzah': 7, 'Tipheret': 6, 'Geburah': 5, 'Chesed': 4, 'Binah': 3, 'Chokmah': 2, 'Kether': 1
-        }
-        this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï']
+        this.sephirahOrder = nephData.sephirahOrder
+        this.monde = nephData.monde
         var self = this
         // client config
         if (null === localStorage.getItem('kabbale-config')) {

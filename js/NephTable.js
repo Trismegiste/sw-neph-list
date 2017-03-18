@@ -5,6 +5,11 @@ var NephTable = function (rootDir) {
     this.rootDir = rootDir
     this.listing = ['magie', 'kabbale', 'alchimie']
     this.data = {}
+    this.laboratoire = ['Métal', 'Liqueur', 'Vapeur', 'Poudre', 'Ambre']
+    this.sephirahOrder = {
+        'Malkut': 10, 'Yesod': 9, 'Hod': 8, 'Netzah': 7, 'Tipheret': 6, 'Geburah': 5, 'Chesed': 4, 'Binah': 3, 'Chokmah': 2, 'Kether': 1
+    }
+    this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï']
 }
 
 NephTable.prototype.createPromise = function (filename) {

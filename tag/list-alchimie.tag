@@ -27,7 +27,7 @@
 
     <script>
         this.listing = nephData.get('alchimie')
-        this.laboratoire = ['Métal', 'Liqueur', 'Vapeur', 'Poudre', 'Ambre']
+        this.laboratoire = nephData.laboratoire
         this.found = []
         var self = this
         // client config
