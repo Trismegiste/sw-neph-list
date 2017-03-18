@@ -82,7 +82,7 @@ NephTable.prototype.findInvoc = function (word, filter) {
         }
         grid['Tous'] = 1
     }
-    console.log(grid)
+    //console.log(grid)
 
     // filtre sur le mot :
     var regex = new RegExp(word, 'i')
@@ -97,4 +97,29 @@ NephTable.prototype.findInvoc = function (word, filter) {
     }
 
     return found
+}
+
+// sorting
+NephTable.prototype.sortInvoc = function (tab) {
+    var self = this
+
+    tab.sort(function (a, b) {
+        var cmp = a.Monde.localeCompare(b.Monde)
+        if (cmp != 0) {
+            if (a.Monde === 'Tous') {
+                return 1
+            } else if (b.Monde === 'Tous') {
+                return -1
+            }
+
+            return cmp
+        } else {
+            cmp = self.sephirahOrder[b.Sephirah] - self.sephirahOrder[a.Sephirah]
+            if (cmp != 0) {
+                return cmp
+            } else {
+                return a.Element.localeCompare(b.Element)
+            }
+        }
+    })
 }

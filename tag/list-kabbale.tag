@@ -34,7 +34,6 @@
     </table>
 
     <script>
-        this.kabbaleList = nephData.get('kabbale')
         this.found = []
         this.sephirahOrder = nephData.sephirahOrder
         this.monde = nephData.monde
@@ -50,27 +49,7 @@
 
         this.onSearch = function () {
             self.found = nephData.findInvoc(self.keyword.value, self.config)
-
-            // sorting
-            self.found.sort(function (a, b) {
-                var cmp = a.Monde.localeCompare(b.Monde)
-                if (cmp != 0) {
-                    if (a.Monde === 'Tous') {
-                        return 1
-                    } else if (b.Monde === 'Tous') {
-                        return -1
-                    }
-
-                    return cmp
-                } else {
-                    cmp = self.sephirahOrder[b.Sephirah] - self.sephirahOrder[a.Sephirah]
-                    if (cmp != 0) {
-                        return cmp
-                    } else {
-                        return a.Element.localeCompare(b.Element)
-                    }
-                }
-            })
+            nephData.sortInvoc(self.found)
         }
 
         this.onDetail = function (e) {
