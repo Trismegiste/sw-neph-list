@@ -44,33 +44,12 @@
 
         this.onChangeConfig = function (event) {
             var mondeSelect = event.item
-            self.config[mondeSelect.titre] = event.target.value
+            self.config[mondeSelect.titre] = parseInt(event.target.value)
             myConfig.write('kabbale-config', self.config)
         }
 
         this.onSearch = function () {
-            var mondeFilter = self.config
-
-            var regex = new RegExp(self.keyword.value, 'i')
-            self.found = []
-            for (var k in self.kabbaleList) {
-                var row = self.kabbaleList[k]
-                if (regex.test(row['Sort']) || regex.test(row['Effet'])) {
-                    if (row.Monde === 'Tous') {
-                        for (var i in mondeFilter) {
-                            if (self.sephirahOrder[row.Sephirah] >= mondeFilter[i]) {
-                                row.pk = k
-                                self.found.push(row)
-                                break;
-                            }
-                        }
-                    } else if ((mondeFilter[row.Monde] !== undefined)
-                            && (self.sephirahOrder[row.Sephirah] >= mondeFilter[row.Monde])) {
-                        row.pk = k
-                        self.found.push(row)
-                    }
-                }
-            }
+            self.found = nephData.findInvoc(self.keyword.value, self.config)
 
             // sorting
             self.found.sort(function (a, b) {
