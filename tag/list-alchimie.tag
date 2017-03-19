@@ -1,16 +1,30 @@
 <list-alchimie>
-    <form class="pure-form pure-g" onChange="{
+    <form class="pure-form" onChange="{
                 onSearch
             }">
-        <div class="pure-u-1-5" each="{ substanc, idx in laboratoire }">
-            <label>
-                <i class="icon-{substanc.toLowerCase()}"></i><input type="checkbox" name="laboChoice" checked="{ config[idx] }"/>
-            </label>
-        </div>
-        <div class="pure-u-1">
-            <input type="text" name="keyword" class="pure-input-1" onkeyup="{
-                        onSearch
-                    }"/>
+        <section class="laboratory">
+            <div class="pure-g">
+                <div class="pure-u-1-5" each="{ substanc, idx in laboratoire }">
+                    <i class="icon-{substanc.toLowerCase()} {disabled: true}"></i><!-- checked="{ config[idx] }" -->
+                </div>
+            </div>
+            <div class="pure-g " each="{ elem, row in element }">
+                <div class="pure-u-1-5" each="{ substanc, col in laboratoire }">
+                    <i class="icon-{elem} {disabled: true}"></i>
+                </div>
+            </div>
+            <div class="pure-g">
+                <div class="pure-u-1-5" each="{ title in nephData.alliage }">
+                    <i class="icon-{title} {disabled: true}"></i>
+                </div>
+            </div>
+        </section>
+        <div class="pure-g">
+            <div class="pure-u-1">
+                <input type="text" name="keyword" class="pure-input-1" onkeyup="{
+                            onSearch
+                        }"/>
+            </div>
         </div>
     </form>
 
@@ -29,6 +43,7 @@
         this.listing = nephData.get('alchimie')
         this.laboratoire = nephData.laboratoire
         this.found = []
+        this.element = nephData.element
         var self = this
         // client config
         if (null === localStorage.getItem('alchimie-config')) {

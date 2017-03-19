@@ -5,7 +5,9 @@ var NephTable = function (rootDir) {
     this.rootDir = rootDir
     this.listing = ['magie', 'kabbale', 'alchimie']
     this.data = {}
-    this.laboratoire = ['Métal', 'Liqueur', 'Vapeur', 'Poudre', 'Ambre']
+    this.element = ['feu', 'air', 'eau', 'lune', 'terre']
+    this.laboratoire = ['Métal', 'Vapeur', 'Liqueur', 'Poudre', 'Ambre']
+    this.alliage = ['lionvert', 'hermes', 'esmeralda', 'atalante', 'rebis']
     this.sephirahOrder = {
         'Malkut': 10, 'Yesod': 9, 'Hod': 8, 'Netzah': 7, 'Tipheret': 6, 'Geburah': 5, 'Chesed': 4, 'Binah': 3, 'Chokmah': 2, 'Kether': 1
     }

@@ -36,7 +36,7 @@
             {ref: 'kabbale', title: 'Kabbale'},
             {ref: 'alchimie', title: 'Alchimie'}
         ]
-        this.activeTab = 'kabbale'
+        this.activeTab = 'alchimie'
         var self = this
 
         isActiveTab(ref) {

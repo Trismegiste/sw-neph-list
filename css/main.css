@@ -37,12 +37,17 @@ form {
     margin-bottom: 0.3em;
 }
 
-td img {
-    width: 1em;
+.laboratory {
+    font-size: 2em;
+    text-align: center;
 }
 
-list-alchimie form img {
-    width: 2em;
+.laboratory i:before {
+    padding-bottom: 0.2em;
+}
+
+.laboratory i.disabled {
+    color: #ccc;
 }
 
 /* for detail */
@@ -57,11 +62,6 @@ article header {
 
 .detail .big-icon i {
     font-size: 3em;
-}
-
-/* à virer */
-article header img {
-    width: 3em;
 }
 
 article header h1 {
@@ -129,7 +129,7 @@ article footer {
 }
 
 .icon-poudre, .icon-lune, .icon-mdk-pachad {
-    color: #555;
+    color: #444;
 }
 
 .icon-mélanosis, .icon-leukosis {
