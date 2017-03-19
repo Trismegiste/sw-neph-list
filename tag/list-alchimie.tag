@@ -4,7 +4,7 @@
             }">
         <div class="pure-u-1-5" each="{ substanc, idx in laboratoire }">
             <label>
-                <img src="./img/outil/{substanc.toLowerCase()}.svg"/><input type="checkbox" name="laboChoice" checked="{ config[idx] }"/>
+                <i class="icon-{substanc.toLowerCase()}"></i><input type="checkbox" name="laboChoice" checked="{ config[idx] }"/>
             </label>
         </div>
         <div class="pure-u-1">
@@ -19,7 +19,7 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
-                <td><img src="./img/elem/{row.Element.toLowerCase()}.svg"/></td>
+                <td><i class="icon-{row.Element.toLowerCase()}"></i></td>
                 <td>{row.Sort}</td>
             </tr>
         </tbody>

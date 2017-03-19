@@ -110,3 +110,32 @@ article footer {
         font-size: 60%;
     }
 }
+
+/* icons colors */
+.icon-ambre, .icon-terre, .icon-mdk-meborack {
+    color: green;
+}
+
+.icon-métal, .icon-feu, .icon-mdk-aresh {
+    color: crimson;
+}
+
+.icon-liqueur, .icon-eau, .icon-mdk-zakaï {
+    color: darkturquoise;
+}
+
+.icon-vapeur, .icon-air, .icon-mdk-sohar {
+    color: darkblue;
+}
+
+.icon-poudre, .icon-lune, .icon-mdk-pachad {
+    color: #666;
+}
+
+.icon-mélanosis, .icon-leukosis {
+    color: black;
+}
+
+.icon-iosis {
+    color: red;
+}
