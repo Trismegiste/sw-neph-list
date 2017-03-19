@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?35264255');
-  src: url('../font/fontello.eot?35264255#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?35264255') format('woff2'),
-       url('../font/fontello.woff?35264255') format('woff'),
-       url('../font/fontello.ttf?35264255') format('truetype'),
-       url('../font/fontello.svg?35264255#fontello') format('svg');
+  src: url('../font/fontello.eot?43181498');
+  src: url('../font/fontello.eot?43181498#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?43181498') format('woff2'),
+       url('../font/fontello.woff?43181498') format('woff'),
+       url('../font/fontello.ttf?43181498') format('truetype'),
+       url('../font/fontello.svg?43181498#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?35264255#fontello') format('svg');
+    src: url('../font/fontello.svg?43181498#fontello') format('svg');
   }
 }
 */
@@ -55,5 +55,28 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.icon-hermes:before { content: '\e801'; } /* '' */
+.icon-lionvert:before { content: '\e802'; } /* '' */
+.icon-atalante:before { content: '\e803'; } /* '' */
+.icon-esmeralda:before { content: '\e804'; } /* '' */
+.icon-mdk-aresh:before { content: '\e805'; } /* '' */
+.icon-mdk-meborack:before { content: '\e806'; } /* '' */
+.icon-mdk-pachad:before { content: '\e807'; } /* '' */
+.icon-mdk-sohar:before { content: '\e808'; } /* '' */
+.icon-mdk-tous:before { content: '\e809'; } /* '' */
+.icon-mdk-zakaï:before { content: '\e80a'; } /* '' */
+.icon-ambre:before { content: '\e80b'; } /* '' */
+.icon-liqueur:before { content: '\e80c'; } /* '' */
+.icon-métal:before { content: '\e80d'; } /* '' */
+.icon-poudre:before { content: '\e80e'; } /* '' */
+.icon-vapeur:before { content: '\e80f'; } /* '' */
+.icon-sephirah:before { content: '\e810'; } /* '' */
+.icon-air:before { content: '\e811'; } /* '' */
+.icon-eau:before { content: '\e812'; } /* '' */
+.icon-feu:before { content: '\e813'; } /* '' */
+.icon-lune:before { content: '\e814'; } /* '' */
+.icon-terre:before { content: '\e815'; } /* '' */
+.icon-tous:before { content: '\e816'; } /* '' */
+.icon-rebis:before { content: '\e817'; } /* '' */
 .icon-spinner:before { content: '\e838'; } /* '' */
 .icon-circle:before { content: '\f111'; } /* '' */

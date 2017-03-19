@@ -55,6 +55,11 @@ article header {
     margin-bottom: 1em;
 }
 
+.detail .big-icon i {
+    font-size: 3em;
+}
+
+/* à virer */
 article header img {
     width: 3em;
 }

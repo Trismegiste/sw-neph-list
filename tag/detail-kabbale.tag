@@ -1,28 +1,22 @@
-<detail-kabbale>
+<detail-kabbale class="detail">
     <article if="{model !== undefined }">
         <header>
             <h1>{model.Sort}</h1>
-            <div  class="pure-g">
+            <div  class="pure-g big-icon">
                 <div class="pure-u-1-3">
-                    <img src="./img/mdk/{model.Monde.toLowerCase()}.svg"/>
-                </div>
-                <div class="pure-u-1-3">
-                    <img src="./img/sephirah.svg"/>
-                </div>
-                <div class="pure-u-1-3">
-                    <img src="./img/elem/{model.Element.toLowerCase()}.svg"/>
-                </div>
-                <div class="pure-u-1-3">
+                    <i class="icon-mdk-{model.Monde.toLowerCase()}"></i>
                     <h2>{model.Monde}</h2>
                 </div>
                 <div class="pure-u-1-3">
+                    <i class="icon-sephirah"></i>
                     <h2>{model.Sephirah}</h2>
                 </div>
                 <div class="pure-u-1-3">
+                    <i class="icon-{model.Element.toLowerCase()}"></i>
                     <h2>{model.Element}</h2>
                 </div>
             </div>
-            <div  class="pure-g">
+            <div class="pure-g">
                 <div class="pure-u-1-3">
                     <h3>INI</h3>
                     d{ convertKa(model.Ka).dice }

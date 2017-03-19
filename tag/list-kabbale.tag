@@ -25,7 +25,7 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
-                <td><img src="./img/elem/{row.Element.toLowerCase()}.svg"/></td>
+                <td><i class="icon-{row.Element.toLowerCase()}"></i></td>
                 <td>{row.Sort}</td>
             </tr>
         </tbody>
