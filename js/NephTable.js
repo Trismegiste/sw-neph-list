@@ -14,6 +14,18 @@ var NephTable = function (rootDir) {
     this.monde = ['Aresh', 'Meborack', 'Pachad', 'Sohar', 'Zakaï']
 }
 
+NephTable.prototype.getSubstanceForAlliage = function (k) {
+    var idx = this.alliage.indexOf(k)
+
+    return this.laboratoire[idx]
+}
+
+NephTable.prototype.getAlliageForSubstance = function (k) {
+    var idx = this.laboratoire.indexOf(k)
+
+    return this.alliage[idx]
+}
+
 NephTable.prototype.createPromise = function (filename) {
     var self = this
 
@@ -124,4 +136,40 @@ NephTable.prototype.sortInvoc = function (tab) {
             }
         }
     })
+}
+
+NephTable.prototype.findSubstance = function (word, filter) {
+    console.log(filter)
+    var table = this.get('alchimie')
+    var found = []
+    var regex = new RegExp(word, 'i')
+
+    for (var k in table) {
+        var row = table[k]
+        var niv = parseInt(row.Cercle.split(0, 1))
+        var sub = row.Substance
+        var ka = row.Element
+
+        switch (niv) {
+            case 1 :
+                if (!filter.outil[sub])
+                    continue
+                break
+            case 2:
+                if (!filter.substance[sub][ka])
+                    continue
+                break
+            case 3:
+                if (!filter.substance[sub][ka]
+                        || !filter.alliage[this.getAlliageForSubstance(sub)])
+                    continue
+        }
+
+        if (regex.test(row['Sort']) || regex.test(row['Effet'])) {
+            found.push(row)
+        }
+
+    }
+
+    return found
 }

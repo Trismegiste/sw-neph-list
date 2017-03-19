@@ -1,21 +1,29 @@
 <list-alchimie>
-    <form class="pure-form" onChange="{
-                onSearch
-            }">
+    <form class="pure-form" onsubmit="return false">
         <section class="laboratory">
             <div class="pure-g">
-                <div class="pure-u-1-5" each="{ substanc, idx in laboratoire }">
-                    <i class="icon-{substanc.toLowerCase()} {disabled: true}"></i><!-- checked="{ config[idx] }" -->
+                <div class="pure-u-1-5" each="{ substance in laboratoire }">
+                    <i class="icon-{substance.toLowerCase()} {disabled: !config.outil[substance]}"
+                       onclick="{
+                                   parent.onClickOutil
+                               }"></i>
                 </div>
             </div>
-            <div class="pure-g " each="{ elem, row in element }">
-                <div class="pure-u-1-5" each="{ substanc, col in laboratoire }">
-                    <i class="icon-{elem} {disabled: true}"></i>
+            <div class="pure-g " each="{ ka in element }">
+                <div class="pure-u-1-5" each="{ substance in laboratoire }">
+                    <i class="icon-{ka} {disabled: !config.substance[substance][ka]}"
+                       data-element="{ka}"
+                       onclick="{
+                                   parent.parent.onClickSubstance
+                               }"></i>
                 </div>
             </div>
             <div class="pure-g">
                 <div class="pure-u-1-5" each="{ title in nephData.alliage }">
-                    <i class="icon-{title} {disabled: true}"></i>
+                    <i class="icon-{title} {disabled: !config.alliage[title]}"
+                       onclick="{
+                                   onClickAlliage
+                               }"></i>
                 </div>
             </div>
         </section>
@@ -46,34 +54,56 @@
         this.element = nephData.element
         var self = this
         // client config
-        if (null === localStorage.getItem('alchimie-config')) {
-            localStorage.setItem('alchimie-config', '[]')
-        }
-        this.config = JSON.parse(localStorage.getItem('alchimie-config'))
+        this.config = myConfig.read('alchimie-config', {
+            outil: {Liqueur: true, 'Métal': true},
+            substance: {
+                Liqueur: {lune: true, eau: true},
+                'Métal': {air: true, feu: true},
+                'Vapeur': {},
+                'Poudre': {},
+                'Ambre': {}
+            },
+            alliage: {lionvert: true, esmeralda: true}
+        })
 
+        this.onClickOutil = function (e) {
+            var k = e.item.substance
+            self.config.outil[k] = !self.config.outil[k]
+            if (!self.config.outil[k]) {
+                self.config.substance[k] = {}
+                var mnt = nephData.getAlliageForSubstance(k)
+                self.config.alliage[mnt] = false
+            }
+            myConfig.write('alchimie-config', self.config)
+            self.trigger('search')
+        }
+
+        this.onClickSubstance = function (e) {
+            var s = e.item.substance
+            var k = e.target.dataset.element
+            if (self.config.outil[s]) {
+                self.config.substance[s][k] = !self.config.substance[s][k]
+            }
+            myConfig.write('alchimie-config', self.config)
+            self.trigger('search')
+        }
+
+        this.onClickAlliage = function (e) {
+            var k = e.item.title
+            var s = nephData.getSubstanceForAlliage(k)
+            if (self.config.outil[s]) {
+                self.config.alliage[k] = !self.config.alliage[k]
+            }
+            myConfig.write('alchimie-config', self.config)
+            self.trigger('search')
+        }
+
+        this.on('search', function () {
+            self.found = nephData.findSubstance(self.keyword.value, self.config)
+        })
 
         this.onSearch = function () {
-            var substance = []
-            for (var idx in self.laboChoice) {
-                var sel = self.laboChoice[idx]
-                self.config[idx] = sel.checked
-                if (sel.checked) {
-                    substance.push(self.laboratoire[idx])
-                }
-            }
-            localStorage.setItem('alchimie-config', JSON.stringify(self.config))
-
-            var regex = new RegExp(self.keyword.value, 'i')
-            self.found = []
-            for (var k in self.listing) {
-                var row = self.listing[k]
-                if (regex.test(row['Sort']) || regex.test(row['Effet'])) {
-                    if (-1 !== substance.indexOf(row.Substance)) {
-                        row.pk = k
-                        self.found.push(row)
-                    }
-                }
-            }
+            self.trigger('search')
         }
 
         this.onDetail = function (e) {
