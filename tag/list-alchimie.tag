@@ -55,15 +55,15 @@
         var self = this
         // client config
         this.config = myConfig.read('alchimie-config', {
-            outil: {Liqueur: true, 'Métal': true},
+            outil: {},
             substance: {
-                Liqueur: {lune: true, eau: true},
-                'Métal': {air: true, feu: true},
+                Liqueur: {},
+                'Métal': {},
                 'Vapeur': {},
                 'Poudre': {},
                 'Ambre': {}
             },
-            alliage: {lionvert: true, esmeralda: true}
+            alliage: {}
         })
 
         this.onClickOutil = function (e) {
