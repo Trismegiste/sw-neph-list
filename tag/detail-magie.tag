@@ -1,10 +1,10 @@
-<detail-magie>
+<detail-magie class="detail">
     <article>
         <header>
             <h1>Le mage {model["Le mage…"].toLowerCase()}</h1>
-            <div  class="pure-g">
+            <div  class="pure-g big-icon">
                 <div class="pure-u-1-3">
-                    <img src="./img/elem/{model['Élément'].toLowerCase()}.svg"/>
+                    <i class="icon-{model['Élément'].toLowerCase()}"></i>
                     <h2>{model['Élément']}</h2>
                 </div>
                 <div class="pure-u-2-3">

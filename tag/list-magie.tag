@@ -12,7 +12,7 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
-                <td><img src="./img/elem/{row['Élément'].toLowerCase()}.svg"/></td>
+                <td><i class="icon-{row['Élément'].toLowerCase()}"></i></td>
                 <td>{row['Le mage…']}</td>
                 <td>{row['Chaîne']}</td>
             </tr>
