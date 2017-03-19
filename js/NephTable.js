@@ -148,7 +148,7 @@ NephTable.prototype.findSubstance = function (word, filter) {
         var row = table[k]
         var niv = parseInt(row.Cercle.split(0, 1))
         var sub = row.Substance
-        var ka = row.Element
+        var ka = row.Element.toLowerCase()
 
         switch (niv) {
             case 1 :
