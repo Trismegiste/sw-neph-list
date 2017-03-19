@@ -36,25 +36,29 @@
             {ref: 'kabbale', title: 'Kabbale'},
             {ref: 'alchimie', title: 'Alchimie'}
         ]
-        this.activeTab = 'kabbale'
         var self = this
 
-        isActiveTab(ref) {
+        this.isActiveTab = function (ref) {
             return ref === self.activeTab
         }
 
-        // this to hide waiting spinner
-        this.on('mount', function() {
-            document.getElementById('waiting').remove()
-            document.getElementById('mainapp').className = ''
-        })
-
         var subRoute = riot.route.create()
-        this.menuTab.forEach(function(tab) {
-            subRoute('/' + tab.ref, function() {
+        this.menuTab.forEach(function (tab) {
+            subRoute('/' + tab.ref, function () {
                 self.activeTab = tab.ref
+                myConfig.write('default', tab.ref)
                 self.update()
             })
         })
+
+        // this to hide waiting spinner
+        this.on('mount', function () {
+            document.getElementById('waiting').remove()
+            document.getElementById('mainapp').className = ''
+            // first page :
+            var defaultRoute = myConfig.read('default', 'magie')
+            riot.route(defaultRoute)
+        })
+
     </script>
 </spa>

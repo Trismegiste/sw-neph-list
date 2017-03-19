@@ -139,7 +139,6 @@ NephTable.prototype.sortInvoc = function (tab) {
 }
 
 NephTable.prototype.findSubstance = function (word, filter) {
-    console.log(filter)
     var table = this.get('alchimie')
     var found = []
     var regex = new RegExp(word, 'i')
