@@ -41,7 +41,7 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
-                <td class="xl-visible"><i class="icon-{extractIcon(row)}"></i></td>
+                <td class="xl-visible"><i class="icon-{nephData.extractAlchemyIcon(row)}"></i></td>
                 <td class="xl-visible"><i class="icon-{row.Substance.toLowerCase()}"></i></td>
                 <td><i class="icon-{row.Element.toLowerCase()}"></i></td>
                 <td>{row.Sort}</td>
@@ -119,17 +119,5 @@
             riot.route('alchimie/' + e.item.row.pk)
         }
 
-// @todo copy-paste to move
-        this.extractName = function (circle) {
-            var idx = circle.slice(0, 1)
-
-            return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
-        }
-
-        this.extractIcon = function (obj) {
-            var idx = obj.Cercle.slice(0, 1)
-
-            return  (idx == 3) ? nephData.getAlliageForSubstance(obj.Substance) : self.extractName(obj.Cercle)
-        }
     </script>
 </list-alchimie>

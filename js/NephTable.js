@@ -186,3 +186,15 @@ NephTable.prototype.sortSubstance = function (tab) {
         return cmp
     })
 }
+
+NephTable.prototype.extractAlchemyName = function (circle) {
+    var idx = circle.slice(0, 1)
+
+    return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
+}
+
+NephTable.prototype.extractAlchemyIcon = function (obj) {
+    var idx = obj.Cercle.slice(0, 1)
+
+    return  (idx == 3) ? this.getAlliageForSubstance(obj.Substance) : this.extractAlchemyName(obj.Cercle)
+}
