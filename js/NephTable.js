@@ -172,3 +172,17 @@ NephTable.prototype.findSubstance = function (word, filter) {
 
     return found
 }
+
+NephTable.prototype.sortSubstance = function (tab) {
+    tab.sort(function (a, b) {
+        var cmp = a.Cercle.localeCompare(b.Cercle)
+        if (cmp === 0) {
+            cmp = a.Substance.localeCompare(b.Substance)
+            if (cmp === 0) {
+                cmp = a.Element.localeCompare(b.Element)
+            }
+        }
+
+        return cmp
+    })
+}

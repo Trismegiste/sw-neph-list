@@ -36,13 +36,18 @@
         </div>
     </form>
 
-    <table class="pure-table pure-table-striped">
+    <table class="pure-table pure-table-striped listing">
         <tbody>
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
+                <td class="xl-visible"><i class="icon-{extractIcon(row)}"></i></td>
+                <td class="xl-visible"><i class="icon-{row.Substance.toLowerCase()}"></i></td>
                 <td><i class="icon-{row.Element.toLowerCase()}"></i></td>
                 <td>{row.Sort}</td>
+                <td class="xl-visible">{row.Effet}</td>
+                <td class="xl-visible">{row["Portée"]}</td>
+                <td class="xl-visible">{row["Durée"]}</td>
             </tr>
         </tbody>
     </table>
@@ -100,6 +105,7 @@
 
         this.on('search', function () {
             self.found = nephData.findSubstance(self.keyword.value, self.config)
+            nephData.sortSubstance(self.found)
         })
 
         this.onSearch = function () {
@@ -108,6 +114,19 @@
 
         this.onDetail = function (e) {
             riot.route('alchimie/' + e.item.row.pk)
+        }
+
+// @todo copy-paste to move
+        this.extractName = function (circle) {
+            var idx = circle.slice(0, 1)
+
+            return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
+        }
+
+        this.extractIcon = function (obj) {
+            var idx = obj.Cercle.slice(0, 1)
+
+            return  (idx == 3) ? nephData.getAlliageForSubstance(obj.Substance) : self.extractName(obj.Cercle)
         }
     </script>
 </list-alchimie>

@@ -15,6 +15,8 @@
                 <td><i class="icon-{row['Élément'].toLowerCase()}"></i></td>
                 <td>{row['Le mage…']}</td>
                 <td>{row['Chaîne']}</td>
+                <td class="xl-visible">{row.Cible}</td>
+                <td class="xl-visible">{row["Effet (avec Relance)"]}</td>
             </tr>
         </tbody>
     </table>
@@ -30,7 +32,6 @@
             for (var k in self.listing) {
                 var row = self.listing[k]
                 if (regex.test(row['Chaîne']) || regex.test(row["Effet (avec Relance)"])) {
-                    row.pk = k
                     self.found.push(row)
                 }
             }
