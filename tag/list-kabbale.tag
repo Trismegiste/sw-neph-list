@@ -31,8 +31,13 @@
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
                     }">
+                <td class="xl-visible"><i class="icon-mdk-{row.Monde.toLowerCase()}"></i></td>
+                <td class="xl-visible">{row.Sephirah}</td>
                 <td><i class="icon-{row.Element.toLowerCase()}"></i></td>
                 <td>{row.Sort}</td>
+                <td class="xl-visible">{row.Effet}</td>
+                <td class="xl-visible">{row['Portée']}</td>
+                <td class="xl-visible">{row['Durée']}</td>
             </tr>
         </tbody>
     </table>
