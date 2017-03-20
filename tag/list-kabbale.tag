@@ -26,7 +26,7 @@
         </div>
     </form>
 
-    <table class="pure-table pure-table-striped">
+    <table class="pure-table pure-table-striped listing">
         <tbody>
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail
