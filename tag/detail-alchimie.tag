@@ -48,11 +48,5 @@
             return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
         }
 
-        this.extractColor = function (circle) {
-            var idx = circle.slice(0, 1)
-
-            return [[], 'black', 'white', 'red'][idx]
-        }
-
     </script>
 </detail-alchimie>
