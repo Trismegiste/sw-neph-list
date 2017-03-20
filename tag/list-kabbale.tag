@@ -40,6 +40,7 @@
                 <td class="xl-visible">{row['Durée']}</td>
             </tr>
         </tbody>
+        <tfoot if="{ found.length }"><tr><td colspan="7">{ found.length } invocations</td></tr></tfoot>
     </table>
 
     <script>

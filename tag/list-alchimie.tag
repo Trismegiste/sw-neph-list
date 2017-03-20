@@ -52,6 +52,7 @@
                 <td class="printer-only"></td>
             </tr>
         </tbody>
+        <tfoot if="{ found.length }"><tr><td colspan="9">{ found.length } formules</td></tr></tfoot>
     </table>
 
     <script>
