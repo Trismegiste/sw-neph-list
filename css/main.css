@@ -18,7 +18,7 @@ footer.terminal {
     color: lightgray;
 }
 
-/* query */
+/* form query */
 form {
     margin: 0 0.6em 1em;
 }
@@ -48,6 +48,13 @@ form {
 
 .laboratory i.disabled {
     color: #ccc;
+}
+
+/* listing */
+@media screen and (max-width: 80em) {
+    .xl-visible {
+        display: none;
+    }
 }
 
 /* for detail */
