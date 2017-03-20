@@ -1,36 +1,39 @@
-<detail-alchimie class="detail">
-    <article if="{model !== undefined }">
-        <header>
-            <h1>{model.Sort}</h1>
-            <div  class="pure-g big-icon">
-                <div class="pure-u-1-3">
-                    <i class="icon-{extractIcon(model)}"></i>
-                    <h2>{extractName(model.Cercle)}</h2>
+<detail-alchimie class="detail pure-g">
+    <div class="pure-u-xl-1-3"></div>
+    <div class="pure-u-1 pure-u-xl-1-3">
+        <article if="{model !== undefined }">
+            <header>
+                <h1>{model.Sort}</h1>
+                <div  class="pure-g big-icon">
+                    <div class="pure-u-1-3">
+                        <i class="icon-{extractIcon(model)}"></i>
+                        <h2>{extractName(model.Cercle)}</h2>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <i class="icon-{model.Substance.toLowerCase()}"></i>
+                        <h2>{model.Substance}</h2>
+                    </div>
+                    <div class="pure-u-1-3">
+                        <i class="icon-{model.Element.toLowerCase()}"></i>
+                        <h2>{model.Element}</h2>
+                    </div>
                 </div>
-                <div class="pure-u-1-3">
-                    <i class="icon-{model.Substance.toLowerCase()}"></i>
-                    <h2>{model.Substance}</h2>
+                <div  class="pure-g">
+                    <div class="pure-u-1-2">
+                        <h3>Portée</h3>
+                        {model['Portée']}
+                    </div>
+                    <div class="pure-u-1-2">
+                        <h3>Durée</h3>
+                        {model['Durée']}
+                    </div>
                 </div>
-                <div class="pure-u-1-3">
-                    <i class="icon-{model.Element.toLowerCase()}"></i>
-                    <h2>{model.Element}</h2>
-                </div>
-            </div>
-            <div  class="pure-g">
-                <div class="pure-u-1-2">
-                    <h3>Portée</h3>
-                    {model['Portée']}
-                </div>
-                <div class="pure-u-1-2">
-                    <h3>Durée</h3>
-                    {model['Durée']}
-                </div>
-            </div>
-        </header>
-        <section>{model.Effet}</section>
-        <section>{model.Aspect}</section>
-        <footer>page {model.Page}</footer>
-    </article>
+            </header>
+            <section>{model.Effet}</section>
+            <section>{model.Aspect}</section>
+            <footer>page {model.Page}</footer>
+        </article>
+    </div>
     <script>
         this.listing = nephData.get('alchimie')
         var self = this

@@ -29,7 +29,7 @@
         </section>
         <div class="pure-g">
             <div class="pure-u-1">
-                <input type="text" name="keyword" class="pure-input-1" onkeyup="{
+                <input type="text" name="keyword" placeholder="Texte à chercher" class="pure-input-1" onkeyup="{
                             onSearch
                         }"/>
             </div>
