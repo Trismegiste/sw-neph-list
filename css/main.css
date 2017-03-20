@@ -113,19 +113,19 @@ article footer {
 
 /* icons colors */
 .icon-ambre, .icon-terre, .icon-mdk-meborack {
-    color: green;
+    color: #335c00;
 }
 
 .icon-métal, .icon-feu, .icon-mdk-aresh {
-    color: crimson;
+    color: #9b0003;
 }
 
 .icon-liqueur, .icon-eau, .icon-mdk-zakaï {
-    color: darkturquoise;
+    color: #008583;
 }
 
 .icon-vapeur, .icon-air, .icon-mdk-sohar {
-    color: darkblue;
+    color: #0017c8;
 }
 
 .icon-poudre, .icon-lune, .icon-mdk-pachad {
@@ -138,4 +138,24 @@ article footer {
 
 .icon-iosis {
     color: red;
+}
+
+.icon-lionvert {
+    color: #00b489;
+}
+
+.icon-rebis {
+    color: #ae6200;
+}
+
+.icon-atalante {
+    color: #f5a623;
+}
+
+.icon-hermes {
+    color: #bb11bd
+}
+
+.icon-esmeralda {
+    color: #00921f;
 }
