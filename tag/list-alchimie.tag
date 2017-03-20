@@ -1,6 +1,22 @@
 <list-alchimie>
     <form class="pure-form" onsubmit="return false">
-        <section class="laboratory">
+        <div class="pure-g">
+            <div class="pure-u-2-3">
+                <input type="text" name="keyword" placeholder="Texte à chercher" class="pure-input-1" onkeyup="{
+                            onSearch
+                        }"/>
+            </div>
+            <div class="pure-u-1-3">
+                <button class="pure-button pure-input-1" onclick="{
+                            onShowConfig
+                        }">
+                    Config
+                    <i class="icon-down-open" if="{ !configVisible }"></i>
+                    <i class="icon-up-open" if="{ configVisible }"></i>
+                </button>
+            </div>
+        </div>
+        <section class="laboratory" if="{ configVisible }">
             <div class="pure-g">
                 <div class="pure-u-1-5" each="{ substance in laboratoire }">
                     <i class="icon-{substance.toLowerCase()} {disabled: !config.outil[substance]}"
@@ -27,13 +43,6 @@
                 </div>
             </div>
         </section>
-        <div class="pure-g">
-            <div class="pure-u-1">
-                <input type="text" name="keyword" placeholder="Texte à chercher" class="pure-input-1" onkeyup="{
-                            onSearch
-                        }"/>
-            </div>
-        </div>
     </form>
 
     <table class="pure-table pure-table-striped listing">
@@ -73,6 +82,11 @@
             },
             alliage: {}
         })
+        this.configVisible = false
+
+        this.onShowConfig = function () {
+            self.configVisible = !self.configVisible
+        }
 
         this.onClickOutil = function (e) {
             var k = e.item.substance
