@@ -1,13 +1,13 @@
 <list-magie>
     <form class="pure-form pure-g">
         <div class="pure-u-1">
-            <input type="text" name="keyword" class="pure-input-1" onkeyup="{
+            <input type="text" placeholder="Texte à chercher" name="keyword" class="pure-input-1" onkeyup="{
                         onSearch
                     }"/>
         </div>
     </form>
 
-    <table class="pure-table pure-table-striped">
+    <table class="pure-table pure-table-striped listing">
         <tbody>
             <tr each="{row, idx in found}" onclick="{
                         parent.onDetail

@@ -19,7 +19,7 @@
         <div class="pure-g">
             <div class="pure-u-xl-1-12"></div>
             <div class="pure-u-1">
-                <input type="text" name="keyword" class="pure-input-1" onkeyup="{
+                <input type="text" placeholder="Texte à chercher" name="keyword" class="pure-input-1" onkeyup="{
                             onSearch
                         }"/>
             </div>
