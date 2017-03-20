@@ -43,6 +43,10 @@ form {
     text-align: center;
 }
 
+.treeoflife {
+    margin-top: 0.6em;
+}
+
 .laboratory i:before {
     padding-bottom: 0.2em;
 }

@@ -99,7 +99,7 @@ NephTable.prototype.findInvoc = function (word, filter) {
     //console.log(grid)
 
     // filtre sur le mot :
-    var regex = new RegExp(word, 'i')
+    var regex = new RegExp(word.trim(), 'i')
 
     for (var idx in table) {
         var row = table[idx]
@@ -141,7 +141,7 @@ NephTable.prototype.sortInvoc = function (tab) {
 NephTable.prototype.findSubstance = function (word, filter) {
     var table = this.get('alchimie')
     var found = []
-    var regex = new RegExp(word, 'i')
+    var regex = new RegExp(word.trim(), 'i')
 
     for (var k in table) {
         var row = table[k]

@@ -27,7 +27,7 @@
         var self = this
 
         this.onSearch = function () {
-            var regex = new RegExp(self.keyword.value, 'i')
+            var regex = new RegExp(self.keyword.value.trim(), 'i')
             self.found = []
             for (var k in self.listing) {
                 var row = self.listing[k]

@@ -1,29 +1,39 @@
 <list-kabbale>
     <form class="pure-form form-label-aligned" onsubmit="return false">
         <div class="pure-g">
-            <div class="pure-u-xl-1-12"></div>
-            <virtual each="{titre in monde}">
-                <div class="pure-u-1-4 pure-u-xl-1-12">
-                    <label>{titre}</label>
-                </div>
-                <div class="pure-u-1-4 pure-u-xl-1-12">
-                    <select class="pure-input-1" value="{ config[titre] }" name="filter" onchange="{
-                                parent.onChangeConfig
-                            }">
-                        <option value="11"></option>
-                        <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
-                    </select>
-                </div>
-            </virtual>
-        </div>
-        <div class="pure-g">
-            <div class="pure-u-xl-1-12"></div>
-            <div class="pure-u-1">
+            <div class="pure-u-2-3">
                 <input type="text" placeholder="Texte à chercher" name="keyword" class="pure-input-1" onkeyup="{
                             onSearch
                         }"/>
             </div>
+            <div class="pure-u-1-3">
+                <button class="pure-button pure-input-1" onclick="{
+                            onShowConfig
+                        }">
+                    Config
+                    <i class="icon-down-open" if="{ !configVisible }"></i>
+                    <i class="icon-up-open" if="{ configVisible }"></i>
+                </button>
+            </div>
         </div>
+        <section class="treeoflife" if="{ configVisible }">
+            <div class="pure-g">
+                <div class="pure-u-xl-1-12"></div>
+                <virtual each="{titre in monde}">
+                    <div class="pure-u-1-4 pure-u-xl-1-12">
+                        <label>{titre}</label>
+                    </div>
+                    <div class="pure-u-1-4 pure-u-xl-1-12">
+                        <select class="pure-input-1" value="{ config[titre] }" name="filter" onchange="{
+                                    parent.onChangeConfig
+                                }">
+                            <option value="11"></option>
+                            <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
+                        </select>
+                    </div>
+                </virtual>
+            </div>
+        </section>
     </form>
 
     <table class="pure-table pure-table-striped listing">
@@ -50,6 +60,11 @@
         var self = this
         // client config
         this.config = myConfig.read('kabbale-config', {})
+        this.configVisible = false
+
+        this.onShowConfig = function () {
+            self.configVisible = !self.configVisible
+        }
 
         this.onChangeConfig = function (event) {
             var mondeSelect = event.item
