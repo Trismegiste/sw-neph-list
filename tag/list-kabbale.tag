@@ -1,22 +1,28 @@
 <list-kabbale>
-    <form class="pure-form pure-g form-label-aligned" onsubmit="return false">
-        <virtual each="{titre in monde}">
-            <div class="pure-u-1-4">
-                <label>{titre}</label>
+    <form class="pure-form form-label-aligned" onsubmit="return false">
+        <div class="pure-g">
+            <div class="pure-u-xl-1-12"></div>
+            <virtual each="{titre in monde}">
+                <div class="pure-u-1-4 pure-u-xl-1-12">
+                    <label>{titre}</label>
+                </div>
+                <div class="pure-u-1-4 pure-u-xl-1-12">
+                    <select class="pure-input-1" value="{ config[titre] }" name="filter" onchange="{
+                                parent.onChangeConfig
+                            }">
+                        <option value="11"></option>
+                        <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
+                    </select>
+                </div>
+            </virtual>
+        </div>
+        <div class="pure-g">
+            <div class="pure-u-xl-1-12"></div>
+            <div class="pure-u-1">
+                <input type="text" name="keyword" class="pure-input-1" onkeyup="{
+                            onSearch
+                        }"/>
             </div>
-            <div class="pure-u-1-4">
-                <select class="pure-input-1" value="{ config[titre] }" name="filter" onchange="{
-                            parent.onChangeConfig
-                        }">
-                    <option value="11"></option>
-                    <option each="{key, val in sephirahOrder}" value="{val}">{key}</option>
-                </select>
-            </div>
-        </virtual>
-        <div class="pure-u-1">
-            <input type="text" name="keyword" class="pure-input-1" onkeyup="{
-                        onSearch
-                    }"/>
         </div>
     </form>
 
