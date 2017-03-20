@@ -4,7 +4,7 @@
             <h1>{model.Sort}</h1>
             <div  class="pure-g big-icon">
                 <div class="pure-u-1-3">
-                    <i class="icon-{extractName(model.Cercle)}"></i>
+                    <i class="icon-{extractIcon(model)}"></i>
                     <h2>{extractName(model.Cercle)}</h2>
                 </div>
                 <div class="pure-u-1-3">
@@ -48,5 +48,10 @@
             return ['', 'mélanosis', 'leukosis', 'iosis'][idx]
         }
 
+        this.extractIcon = function (obj) {
+            var idx = obj.Cercle.slice(0, 1)
+
+            return  (idx == 3) ? nephData.getAlliageForSubstance(obj.Substance) : self.extractName(obj.Cercle)
+        }
     </script>
 </detail-alchimie>
