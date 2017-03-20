@@ -48,6 +48,8 @@
                 <td class="xl-visible">{row.Effet}</td>
                 <td class="xl-visible">{row["Portée"]}</td>
                 <td class="xl-visible">{row["Durée"]}</td>
+                <td class="printer-only"></td>
+                <td class="printer-only"></td>
             </tr>
         </tbody>
     </table>

@@ -57,6 +57,12 @@ form {
     }
 }
 
+@media not print {
+    .printer-only {
+        display: none;
+    }
+}
+
 .listing i {
     font-size: 140%;
 }
