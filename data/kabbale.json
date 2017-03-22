@@ -1687,4 +1687,44 @@
         "Durée": "-",
         "Effet": "Accorde valeur à l'Honneur, la Droiture et le Dépassement de soi. L'univers est un adversaire à plier à sa volonté. Peut prêter une troupe qui éliminera toute résistance.",
         "Aspect": "Guerrier torse nu, impressionnante musculature, cicatrices formant sceaux, pentacles et clefs, armure noire de pointes et lames, casque à cornes"
-    }]
+    },
+    {
+        "Cercle": "3 - Cléfs",
+        "Element": "Terre",
+        "Sort": "Les Sages aux Clochettes",
+        "Page": "LdM 166",
+        "Monde": "Pachad",
+        "Sephirah": "Binah",
+        "Ka": 20,
+        "Portée": "1 cible",
+        "Durée": "Définitif",
+        "Effet": "Inflige une maladie à pustules. VIG FD 7 pour résister",
+        "Aspect": "capuchon rapiécé, robe de bure informe et crécerelle"
+    },
+    {
+        "Cercle": "3 - Cléfs",
+        "Element": "Lune",
+        "Sort": "Les Ministres de Sathiel, ceux qui teintent le Ciel de rouge",
+        "Page": "LdM 168",
+        "Monde": "Pachad",
+        "Sephirah": "Binah",
+        "Ka": 20,
+        "Portée": "1 Bâtiment",
+        "Durée": "prochain lundi",
+        "Effet": "la maison se déplace sur des pattes de poulet, jet d'objet, chaos & désordre. L'intérieur est la maison des horreurs",
+        "Aspect": "créature mi-homme, mi-bouc"
+    },
+    {
+        "Cercle": "3 - Cléfs",
+        "Element": "Air",
+        "Sort": "Les Flammes bleues du dernier Instant",
+        "Page": "LdM 168",
+        "Monde": "Zakaï",
+        "Sephirah": "Chokmah",
+        "Ka": 20,
+        "Portée": "partout",
+        "Durée": "prochain jeudi",
+        "Effet": "trouve l’emplacement des Stases de tous les Nephilim. Si danger : prévient le kabbaliste en s'agitant. Provoque la mélancolie pour 3 j",
+        "Aspect": " petites ﬂammes bleues de la taille de lucioles qui volettent autour du Kabbaliste"
+    }
+]
