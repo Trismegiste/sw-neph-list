@@ -14,7 +14,7 @@
                     }">
                 <td><i class="icon-{row['Élément'].toLowerCase()}"></i></td>
                 <td>{row['Le mage…']}</td>
-                <td>{row['Chaîne']}</td>
+                <td><div each="{variant in row['Chaîne'].split('\n')}">{variant}</div></td>
                 <td class="xl-visible">{row.Cible}</td>
                 <td class="xl-visible">{row["Effet (avec Relance)"]}</td>
             </tr>
