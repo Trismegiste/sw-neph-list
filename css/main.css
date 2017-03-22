@@ -72,6 +72,10 @@ form {
     font-size: 140%;
 }
 
+.listing td {
+    cursor: pointer;
+}
+
 /* for detail */
 article {
     margin: 0 0.6em 1em;
