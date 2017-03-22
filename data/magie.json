@@ -203,6 +203,14 @@
         "Cercle": 1,
         "Le mage…": "Perçoit",
         "Élément": "Lune",
+        "Chaîne": "Dissimulation > Mensonge",
+        "Cible": "cible",
+        "Effet (avec Relance)": "Détecte un mensonge conscient de la cible"
+    },
+    {
+        "Cercle": 1,
+        "Le mage…": "Perçoit",
+        "Élément": "Lune",
         "Chaîne": "Mystère > Initié",
         "Cible": "zone",
         "Effet (avec Relance)": "Perçoit les humains conscients de la nature magique du monde. Un écuyer ignorant ou un synarque de bas niveau ne sont pas détectés"

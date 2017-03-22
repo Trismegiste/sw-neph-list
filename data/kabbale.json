@@ -229,7 +229,7 @@
         "Ka": 3,
         "Portée": "1 lieu",
         "Durée": "-",
-        "Effet": "Hantent un Lieu. Humain doit réussir test Âme FD 8 ou fuir de peur",
+        "Effet": "Hantent un Lieu. Humain doit réussir test Âme FD 6 ou fuir de peur",
         "Aspect": "Formes spectrales dans les ombres"
     },
     {
@@ -580,7 +580,7 @@
         "Ka": 10,
         "Portée": "1 pers.",
         "Durée": "Mardi",
-        "Effet": "Fait dépérir psychologiquement la cible. Vigueur -1 TDD tous les 5 jours et 1 niveau de Fatigue constant pendant l'invoc. Vigueur à 0 = Mort",
+        "Effet": "Fait dépérir psychologiquement la cible. Vigueur -1 TDD tous les 4 jours et 1 niveau de Fatigue constant pendant l'invoc. Vigueur<1d4  = Mort",
         "Aspect": "Guerriers armure complète, casque grec dans diamant brut"
     },
     {
@@ -723,7 +723,7 @@
         "Ka": 3,
         "Portée": "Kabbaliste",
         "Durée": "-",
-        "Effet": "Contrôle 1 par 1, Voir Chaleur à travers elles, Dégâts 2d4 de dommages ou Eclairer 3m. Non cumulable",
+        "Effet": "Contrôle 1 par 1, Voir Chaleur à travers elles. 1 att par rd : dégâts 2d4 de dommages ou Eclairer 3m",
         "Aspect": "7 Sphères de feu"
     },
     {
@@ -1204,7 +1204,7 @@
         "Ka": 12,
         "Portée": "1 cible",
         "Durée": "-",
-        "Effet": "Ramènent un humain mort depuis moins d'1 mois : sacrifice d'une puce ou de 2 si ka-soleil initié (d10+)",
+        "Effet": "Ramènent un humain mort depuis moins d'1 mois : sacrifice d'une puce par rang de ka-soleil",
         "Aspect": "Marches du Palais, 2 sentinelles en robe de bure encapuchonnées"
     },
     {
@@ -1217,7 +1217,7 @@
         "Ka": 7,
         "Portée": "Kabbaliste",
         "Durée": "-",
-        "Effet": "Kabbaliste s'allonge, immobilisé dans un cocon végétal. Armure physique 4 et Guérison d'une blessure tous les 3 rounds",
+        "Effet": "Kabbaliste s'allonge, immobilisé dans un cocon végétal. Armure physique 4 et Guérison d'une blessure tous les 2 rounds",
         "Aspect": "Buisson de Lierre"
     },
     {
@@ -1230,7 +1230,7 @@
         "Ka": 12,
         "Portée": "Kabbaliste",
         "Durée": "Prochain combat",
-        "Effet": "Kabbaliste amélioré pour prochain combat : Combat +2 TDD, Armure physique 4, Invu Projectiles",
+        "Effet": "Kabbaliste guidé par l'améthyste pour prochain combat : Combat +2 TDD, Armure physique 4, Invulnérable Projectiles",
         "Aspect": "Femme aux yeux d'Améthystes, repartira avec les armes utilisées"
     },
     {
