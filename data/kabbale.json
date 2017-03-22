@@ -1738,7 +1738,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Adonaï est le roi des éléments. Capable de déchaîner n’importe quel cataclysme naturel. Sacrifice de Ka",
-        "Aspect": "Immense créature à queue de poisson, au corps recouvert d’écailles argentées, avec pattes griffues, des ailes membraneuses et possédant une tête reptilienne crachant du feu"
+        "Aspect": "Immense créature à queue de poisson, au corps recouvert d’écailles argentées, avec pattes griffues, des ailes membraneuses et possédant une tête reptilienne crachant du feu",
+        "mj": true
     },
     {
         "Cercle": "1 – Sceaux",
@@ -1751,7 +1752,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Maître de toutes les illusions. Connaît tous les Plans subtils et leurs passages. Connaît aussi les secrets de la vie, de la mort, de la résurrection et de la réincarnation. C’est aussi le conciliateur par excellence.",
-        "Aspect": "Nul ne l’a vu deux fois sous la même apparence"
+        "Aspect": "Nul ne l’a vu deux fois sous la même apparence",
+        "mj": true
     },
     {
         "Cercle": "1 – Sceaux",
@@ -1764,7 +1766,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Connaissance totale de tous les Champs magiques, conjonctions, Plexus et Nexus ainsi que de leur évolution. Peut aussi en créer et les modifier à sa guise. Connaissances sur tous les domaines du savoir et de la science. Gouverne les animaux et peut en créer, les changer, les rendre intelligents ou les faire obéir à ses ordres.",
-        "Aspect": "Un géant vêtu de blanc, avec bien souvent une armure et un rameau d’olivier dans les mains"
+        "Aspect": "Un géant vêtu de blanc, avec bien souvent une armure et un rameau d’olivier dans les mains",
+        "mj": true
     },
     {
         "Cercle": "1 – Sceaux",
@@ -1777,7 +1780,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Commande les milices célestes qu’il peut lancer dans un affrontement qu’il juge noble. Peut donner des pouvoirs à un champion si sa cause est juste. Contrôle toutes les émotions qu’il peut créer et manipuler à sa guise. Gouverne aussi tous les Végétaux",
-        "Aspect": "Un guerrier à l’armure d’or étincelante"
+        "Aspect": "Un guerrier à l’armure d’or étincelante",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1790,7 +1794,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "On ne sait rien de lui",
-        "Aspect": "On ne sait rien de lui"
+        "Aspect": "On ne sait rien de lui",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1803,7 +1808,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Fille de l'épée de Gabriel. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
-        "Aspect": "Épée de couleur argent"
+        "Aspect": "Épée de couleur argent",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1816,7 +1822,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Fille de l'épée de Michael. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
-        "Aspect": "Épée vert lumineux qui vire quelquefois au noir"
+        "Aspect": "Épée vert lumineux qui vire quelquefois au noir",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1829,7 +1836,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Fille de l'épée de Sandolphan. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
-        "Aspect": "Épée de couleur bleue intense"
+        "Aspect": "Épée de couleur bleue intense",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1842,7 +1850,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Fille de l'épée de Raphaël. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
-        "Aspect": "Épée qui luit de mille couleurs chatoyantes"
+        "Aspect": "Épée qui luit de mille couleurs chatoyantes",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1855,7 +1864,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Fille de l'épée de Ariel. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
-        "Aspect": "Épée de couleur verte avec des reflets dorés"
+        "Aspect": "Épée de couleur verte avec des reflets dorés",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1868,7 +1878,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Porte la guerre et la destruction. N’hésite pas à engager même dans notre monde, ses légions dans une bataille. Peut déclencher des guerres et des conflits, apporter toute forme de destruction sur le monde. Peut créer des phénomènes naturels et surnaturels impressionnants.",
-        "Aspect": "Un guerrier dont le visage est dissimulé sous un casque à cornes. Il a une ceinture de pierreries qui luit de mille feux et irradie une immense puissance élémentaire. Il tient une épée immense couverte de signes kabbalistiques."
+        "Aspect": "Un guerrier dont le visage est dissimulé sous un casque à cornes. Il a une ceinture de pierreries qui luit de mille feux et irradie une immense puissance élémentaire. Il tient une épée immense couverte de signes kabbalistiques.",
+        "mj": true
     },
     {
         "Cercle": "2 – Pentacles",
@@ -1881,7 +1892,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Pouvoir étendu sur tout ce qui touche au corps, ce qui implique la guérison, même d’une épidémie à grande échelle, des mutations et des transformations. Peut créer des doubles, des corps artiﬁciels et des êtres humanoïdes. Peut redistribuer le Pentacle d’un Nephilim et le faire changer de métamorphe. Il est aussi l'inspirateur des arts et de toute forme de création. Sacrifice de Ka",
-        "Aspect": "Un métamorphe accompli de Nephilim, portant un sceptre à la main"
+        "Aspect": "Un métamorphe accompli de Nephilim, portant un sceptre à la main",
+        "mj": true
     },
     {
         "Cercle": "3 – Clefs",
@@ -1894,7 +1906,8 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Connaît les secrets de l’Apocalypse bien qu’il ne les révèle pas aux Nephilim Kabbalistes tant que le tarot ne sera pas complet. Peut affranchir les Nephilim des barrières du temps et les transporter dans le passé ou dans le futur.",
-        "Aspect": "Un immense visage sombre aux traits indistincts"
+        "Aspect": "Un immense visage sombre aux traits indistincts",
+        "mj": true
     },
     {
         "Cercle": "3 – Clefs",
@@ -1907,6 +1920,7 @@
         "Portée": "-",
         "Durée": "-",
         "Effet": "Éveille les sens et les dons en Ka que le Nephilim possédait naturellement quand il était un Kaïm. Ces sens sont au nombre de cinq, un par trait de métamorphe.",
-        "Aspect": "Serpent de 5 m de long. Il a une tête de dragon à l'expression à la fois fourbe et intelligente. Son corps est couvert d'écailles brillantes vertes et bleues aux reﬂets irisés."
+        "Aspect": "Serpent de 5 m de long. Il a une tête de dragon à l'expression à la fois fourbe et intelligente. Son corps est couvert d'écailles brillantes vertes et bleues aux reﬂets irisés.",
+        "mj": true
     }
 ]

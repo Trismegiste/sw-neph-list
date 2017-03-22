@@ -103,6 +103,9 @@ NephTable.prototype.findInvoc = function (word, filter) {
 
     for (var idx in table) {
         var row = table[idx]
+        if (row.mj) {
+            continue
+        }
         if (this.sephirahOrder[row.Sephirah] >= grid[row.Monde]) {
             if (regex.test(row['Sort']) || regex.test(row['Effet'])) {
                 found.push(row)
