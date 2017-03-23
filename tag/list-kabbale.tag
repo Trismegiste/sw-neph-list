@@ -67,6 +67,7 @@
         this.noSubmit = function () {
             // to make the virtual keyboard disappeard on mobile
             self.keyword.blur()
+            self.trigger('search')
         }
 
         this.onShowConfig = function () {
