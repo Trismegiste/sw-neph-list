@@ -307,7 +307,7 @@
         "Ka": 6,
         "Portée": "-",
         "Durée": "-",
-        "Effet": "Selon nb de personnes à portée. <10 :  malus -1 ; 10 à 20 : malus -2; >20 : malus -3, sauf personnes que Kabbaliste veut protéger. Relance ajoute -1",
+        "Effet": "Selon nb de personnes à portée. <10 :  malus -1 ; 10 à 20 : malus -2; >20 : malus -3, sauf personnes que Kabbaliste veut protéger.",
         "Aspect": ""
     },
     {
