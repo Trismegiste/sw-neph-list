@@ -9,13 +9,13 @@
                         }"/>
             </div>
             <div class="pure-u-1-3">
-                <button class="pure-button pure-input-1" onclick="{
+                <a class="pure-button pure-input-1" onclick="{
                             onShowConfig
                         }">
                     Config
                     <i class="icon-down-open" if="{ !configVisible }"></i>
                     <i class="icon-up-open" if="{ configVisible }"></i>
-                </button>
+                </a>
             </div>
         </div>
         <section class="treeoflife" if="{ configVisible }">
