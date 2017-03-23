@@ -122,22 +122,20 @@ NephTable.prototype.sortInvoc = function (tab) {
 
     tab.sort(function (a, b) {
         var cmp = a.Monde.localeCompare(b.Monde)
-        if (cmp != 0) {
+        if (cmp !== 0) {
             if (a.Monde === 'Tous') {
-                return 1
+                cmp = 1
             } else if (b.Monde === 'Tous') {
-                return -1
+                cmp = -1
             }
-
-            return cmp
         } else {
             cmp = self.sephirahOrder[b.Sephirah] - self.sephirahOrder[a.Sephirah]
-            if (cmp != 0) {
-                return cmp
-            } else {
-                return a.Element.localeCompare(b.Element)
+            if (cmp === 0) {
+                cmp = a.Element.localeCompare(b.Element)
             }
         }
+
+        return cmp
     })
 }
 
