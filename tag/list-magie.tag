@@ -28,7 +28,7 @@
         this.found = []
         var self = this
 
-        this.noSubmit = function (v) {
+        this.noSubmit = function () {
             // to make the virtual keyboard disappeard on mobile
             self.keyword.blur()
         }

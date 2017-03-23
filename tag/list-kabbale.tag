@@ -1,5 +1,7 @@
 <list-kabbale>
-    <form class="pure-form form-label-aligned" onsubmit="return false">
+    <form class="pure-form form-label-aligned" onsubmit="{
+                noSubmit
+            }">
         <div class="pure-g">
             <div class="pure-u-2-3">
                 <input type="text" placeholder="Texte à chercher" name="keyword" class="pure-input-1" onkeyup="{
@@ -61,6 +63,11 @@
         // client config
         this.config = myConfig.read('kabbale-config', {})
         this.configVisible = false
+
+        this.noSubmit = function () {
+            // to make the virtual keyboard disappeard on mobile
+            self.keyword.blur()
+        }
 
         this.onShowConfig = function () {
             self.configVisible = !self.configVisible

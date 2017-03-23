@@ -1,5 +1,7 @@
 <list-alchimie>
-    <form class="pure-form" onsubmit="return false">
+    <form class="pure-form" onsubmit="{
+                noSubmit
+            }">
         <div class="pure-g">
             <div class="pure-u-2-3">
                 <input type="text" name="keyword" placeholder="Texte à chercher" class="pure-input-1" onkeyup="{
@@ -86,6 +88,11 @@
 
         this.onShowConfig = function () {
             self.configVisible = !self.configVisible
+        }
+
+        this.noSubmit = function () {
+            // to make the virtual keyboard disappeard on mobile
+            self.keyword.blur()
         }
 
         this.onClickOutil = function (e) {
