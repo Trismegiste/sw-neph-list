@@ -774,5 +774,21 @@
         "Chaîne": "Écaille > Cataphracte",
         "Cible": "-",
         "effet": "Crée une armure physique de 3"
+    },
+    {
+        "Cercle": 3,
+        "verbe": "Crée",
+        "Élément": "Eau",
+        "Chaîne": "Tristesse",
+        "Cible": "cible",
+        "effet": "Transforme l'humain ciblé en grand dépressif"
+    },
+    {
+        "Cercle": 3,
+        "verbe": "Crée",
+        "Élément": "Lune",
+        "Chaîne": "Peur",
+        "Cible": "cible",
+        "effet": "L'être vivant ciblé est pris de panique. Sa réaction est variable (cf SW page 150)"
     }
 ]
