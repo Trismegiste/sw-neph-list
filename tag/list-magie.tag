@@ -1,5 +1,5 @@
 <list-magie>
-    <form class="pure-form pure-g">
+    <form class="pure-form pure-g" onsubmit="return false">
         <div class="pure-u-1">
             <input type="text" placeholder="Texte à chercher" name="keyword" class="pure-input-1" onkeyup="{
                         onSearch
