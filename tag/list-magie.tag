@@ -13,10 +13,10 @@
                         parent.onDetail
                     }">
                 <td><i class="icon-{row['Élément'].toLowerCase()}"></i></td>
-                <td>{row['Le mage…']}</td>
+                <td>{row['verbe']}</td>
                 <td><div each="{variant in row['Chaîne'].split('\n')}">{variant}</div></td>
                 <td class="xl-visible">{row.Cible}</td>
-                <td class="xl-visible">{row["Effet (avec Relance)"]}</td>
+                <td class="xl-visible">{row["effet"]}</td>
             </tr>
         </tbody>
     </table>
@@ -31,7 +31,7 @@
             self.found = []
             for (var k in self.listing) {
                 var row = self.listing[k]
-                if (regex.test(row['Chaîne']) || regex.test(row["Effet (avec Relance)"])) {
+                if (regex.test(row['Chaîne']) || regex.test(row["effet"])) {
                     self.found.push(row)
                 }
             }

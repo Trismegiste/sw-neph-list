@@ -3,7 +3,7 @@
     <div class="pure-u-1 pure-u-xl-1-3">
         <article>
             <header>
-                <h1>Le mage {model["Le mage…"].toLowerCase()}</h1>
+                <h1>Le mage {model["verbe"].toLowerCase()}</h1>
                 <div  class="pure-g big-icon">
                     <div class="pure-u-1-2">
                         <i class="icon-{getVerbe(model['Cercle'])}"></i>
@@ -22,7 +22,7 @@
                     </div>
                 </div>
             </header>
-            <section>{model["Effet (avec Relance)"]}</section>
+            <section>{model["effet"]}</section>
         </article>
     </div>
     <script>
