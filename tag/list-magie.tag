@@ -1,5 +1,7 @@
 <list-magie>
-    <form class="pure-form pure-g" onsubmit="return false">
+    <form class="pure-form pure-g" onsubmit="{
+                noSubmit
+            }">
         <div class="pure-u-1">
             <input type="text" placeholder="Texte à chercher" name="keyword" class="pure-input-1" onkeyup="{
                         onSearch
@@ -25,6 +27,11 @@
         this.listing = nephData.get('magie')
         this.found = []
         var self = this
+
+        this.noSubmit = function (v) {
+            // to make the virtual keyboard disappeard on mobile
+            self.keyword.blur()
+        }
 
         this.onSearch = function () {
             var regex = new RegExp(self.keyword.value.trim(), 'i')
