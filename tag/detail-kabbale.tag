@@ -21,7 +21,7 @@
                 <div class="pure-g">
                     <div class="pure-u-1-3">
                         <h3>INI</h3>
-                        d{ convertKa(model.Ka).dice }
+                        { convertKa(model.Ka).dice }
                         <virtual each="{ convertKa(model.Ka).puce }"><i class="icon-circle dotted-icon"></i></virtual>
                     </div>
                     <div class="pure-u-1-3">
@@ -49,8 +49,15 @@
                 dotted.push(true)
             }
 
+            var face = Math.floor((ka - 1) / 5) * 2 + 4
+            if (face > 12) {
+                face = 'd12+' + ((face - 12) / 2)
+            } else {
+                face = 'd' + face
+            }
+
             return {
-                dice: Math.floor((ka - 1) / 5) * 2 + 4,
+                dice: face,
                 puce: dotted
             }
         }
