@@ -688,12 +688,12 @@
         "effet": "Glaive élémentaire d'Air. Dégâts magiques de 2 dés de KAD. Dégâts phys selon taille"
     },
     {
-        "Cercle": 3,
-        "verbe": "Crée",
-        "Élément": "Eau",
-        "Chaîne": "Vague > Lac",
-        "Cible": "zone",
-        "effet": "Crée un lac sur la zone"
+        "Cercle": 2,
+        "verbe": "Augmente",
+        "Élément": "Feu",
+        "Chaîne": "Violence > Dégâts",
+        "Cible": "cible",
+        "effet": "Augmente les dégâts d'une arme de +1 (+2 sur Relance)"
     },
     {
         "Cercle": 3,

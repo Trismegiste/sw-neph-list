@@ -35,6 +35,15 @@
                     self.found.push(row)
                 }
             }
+
+            self.found.sort(function (a, b) {
+                var cmp = a.Cercle - b.Cercle
+                if (cmp === 0) {
+                    cmp = a['Élément'].localeCompare(b['Élément'])
+                }
+
+                return cmp
+            })
         }
 
         this.onDetail = function (e) {
