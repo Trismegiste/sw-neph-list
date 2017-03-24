@@ -95,7 +95,7 @@
         "Page": "152",
         "Portée": "3 m3",
         "Durée": "PUI mn",
-        "Effet": "Mur d'eau qui bloque (Vigueur FD 8)/ralentit les projectiles (dégâts réduit de 4). Durée doublé sur Relance",
+        "Effet": "Mur d'eau qui bloque (Vigueur FD 8)/ralentit les projectiles (comme une armure de 4). Durée doublé sur Relance",
         "Aspect": "Remous qui dessinent un Labyrinthe"
     },
     {
@@ -520,7 +520,7 @@
         "Cercle": "2 - Œuvre au Blanc",
         "Substance": "Liqueur",
         "Element": "Air",
-        "Sort": "Solution de l'Œil de Ter",
+        "Sort": "Solution de l'Œil de Tar",
         "Page": "91",
         "Portée": "1 mur 3 m2",
         "Durée": "PUI h",
@@ -711,7 +711,7 @@
         "Page": "187",
         "Portée": "Outil du Labo",
         "Durée": "1 saison",
-        "Effet": "Double le nombre de substances produites par outil (un par labo)",
+        "Effet": "Double le nombre de substances produites par l'outil primaire",
         "Aspect": "Petite créature bleue et blanche baigne dans une encre translucide qu'elle sécrète"
     },
     {
@@ -1063,7 +1063,7 @@
         "Page": "89",
         "Portée": "50 km",
         "Durée": "1h",
-        "Effet": "Lâche une tempête, rafales 100km/h, Tonnerre, Pluie. Vigueur ou Discretion FD 8 pour ne pas être emporté. 2H sur une Relance",
+        "Effet": "Lâche une tempête, rafales 100km/h, Tonnerre, Pluie. Vigueur ou Discretion FD 6 (8 sur Relance) pour ne pas être emporté",
         "Aspect": ""
     },
     {
