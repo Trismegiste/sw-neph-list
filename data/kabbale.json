@@ -1922,5 +1922,19 @@
         "Effet": "Éveille les sens et les dons en Ka que le Nephilim possédait naturellement quand il était un Kaïm. Ces sens sont au nombre de cinq, un par trait de métamorphe.",
         "Aspect": "Serpent de 5 m de long. Il a une tête de dragon à l'expression à la fois fourbe et intelligente. Son corps est couvert d'écailles brillantes vertes et bleues aux reﬂets irisés.",
         "mj": true
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Air",
+        "Sort": "Les Clairons d'Orichalque, Ministres des dissensions",
+        "Page": "LdM 169",
+        "Monde": "Aresh",
+        "Sephirah": "Chokmah",
+        "Ka": 18,
+        "Portée": "1 nephilim",
+        "Durée": "prochain mois astro",
+        "Effet": "Opposition KAD vs Ka-élément le plus faible. Jusqu'à réussite : Cruxim majeur & perte de [dé KAD - 4] puces temporaires d'INI",
+        "Aspect": "Tourbillon longiligne au sein duquel on peut voir les visages terrorisés de ses victimes",
+        "mj": false
     }
 ]
