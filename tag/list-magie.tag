@@ -31,6 +31,7 @@
         this.noSubmit = function () {
             // to make the virtual keyboard disappeard on mobile
             self.keyword.blur()
+            self.onSearch()
         }
 
         this.onSearch = function () {
