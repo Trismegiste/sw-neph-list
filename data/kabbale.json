@@ -404,7 +404,7 @@
     {
         "Cercle": "1 - Sceaux",
         "Element": "Feu",
-        "Sort": "Véloce des Portails de Flamme",
+        "Sort": "Véloces des Portails de Flamme",
         "Page": 211,
         "Monde": "Meborack",
         "Sephirah": "Malkut",
@@ -1691,7 +1691,7 @@
     {
         "Cercle": "3 - Clefs",
         "Element": "Terre",
-        "Sort": "Les Sages aux Clochettes",
+        "Sort": "Sages aux Clochettes",
         "Page": "LdM 166",
         "Monde": "Pachad",
         "Sephirah": "Binah",
@@ -1704,7 +1704,7 @@
     {
         "Cercle": "3 - Clefs",
         "Element": "Lune",
-        "Sort": "Les Ministres de Sathiel, ceux qui teintent le Ciel de rouge",
+        "Sort": "Ministres de Sathiel, ceux qui teintent le Ciel de rouge",
         "Page": "LdM 168",
         "Monde": "Pachad",
         "Sephirah": "Binah",
@@ -1717,7 +1717,7 @@
     {
         "Cercle": "3 - Clefs",
         "Element": "Air",
-        "Sort": "Les Flammes bleues du dernier Instant",
+        "Sort": "Flammes bleues du dernier Instant",
         "Page": "LdM 168",
         "Monde": "Zakaï",
         "Sephirah": "Chokmah",
@@ -1926,7 +1926,7 @@
     {
         "Cercle": "3 – Clefs",
         "Element": "Air",
-        "Sort": "Les Clairons d'Orichalque, Ministres des dissensions",
+        "Sort": "Clairons d'Orichalque, Ministres des dissensions",
         "Page": "LdM 169",
         "Monde": "Aresh",
         "Sephirah": "Chokmah",
