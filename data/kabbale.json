@@ -1786,7 +1786,7 @@
     {
         "Cercle": "2 – Pentacles",
         "Element": "Tous",
-        "Sort": "Eloha, le Suzerain noématique de Tipheret",
+        "Sort": "Eloha, Celui qui influe par l’ordre des Malachim, le Suzerain noématique de Tipheret",
         "Page": "Cod MJ",
         "Monde": "Tous",
         "Sephirah": "Tipheret",
@@ -1912,7 +1912,7 @@
     {
         "Cercle": "3 – Clefs",
         "Element": "Tous",
-        "Sort": "Le Gardien du Sublime Jardin, l’œil vigilant de la Connaissance Révélée de Chokmah",
+        "Sort": "Iah, Iod Tetragrammaton, le Gardien du Sublime Jardin, l’œil vigilant de la Connaissance Révélée de Chokmah",
         "Page": "Kab 168",
         "Monde": "Tous",
         "Sephirah": "Chokmah",
@@ -1921,6 +1921,20 @@
         "Durée": "-",
         "Effet": "Éveille les sens et les dons en Ka que le Nephilim possédait naturellement quand il était un Kaïm. Ces sens sont au nombre de cinq, un par trait de métamorphe.",
         "Aspect": "Serpent de 5 m de long. Il a une tête de dragon à l'expression à la fois fourbe et intelligente. Son corps est couvert d'écailles brillantes vertes et bleues aux reﬂets irisés.",
+        "mj": true
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Tous",
+        "Sort": "Ehieh",
+        "Page": "Cod MJ",
+        "Monde": "Tous",
+        "Sephirah": "Kether",
+        "Ka": 50,
+        "Portée": "-",
+        "Durée": "-",
+        "Effet": "On ne sait rien de lui",
+        "Aspect": "On ne sait rien de lui",
         "mj": true
     },
     {
