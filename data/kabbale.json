@@ -1716,7 +1716,7 @@
     },
     {
         "Cercle": "3 - Clefs",
-        "Element": "Air",
+        "Element": "Eau",
         "Sort": "Flammes bleues du dernier Instant",
         "Page": "LdM 168",
         "Monde": "Zakaï",
@@ -1724,7 +1724,7 @@
         "Ka": 20,
         "Portée": "partout",
         "Durée": "prochain jeudi",
-        "Effet": "trouve l’emplacement des Stases de tous les Nephilim. Si danger : prévient le kabbaliste en s'agitant. Provoque la mélancolie pour 3 j",
+        "Effet": "Trouve l’emplacement des Stases de tous les Nephilim. Si danger : prévient le kabbaliste en s'agitant. Provoque la mélancolie pour 3 j",
         "Aspect": " petites ﬂammes bleues de la taille de lucioles qui volettent autour du Kabbaliste"
     }
     , {
@@ -2004,7 +2004,7 @@
     },
     {
         "Cercle": "3 – Clefs",
-        "Element": "Terre",
+        "Element": "Eau",
         "Sort": "Croix du pécheur, le poids de la souffrance du pénitent",
         "Page": "LdM 223",
         "Monde": "Zakaï",
@@ -2018,7 +2018,7 @@
     {
         "Cercle": "3 – Clefs",
         "Element": "Air",
-        "Sort": "Les sages aux manteaux d’ombres, de la montagne blanche d'au delà les rivages de brumes",
+        "Sort": "Les Sages aux manteaux d’ombres, de la montagne blanche d'au delà les rivages de brumes",
         "Page": "LdM 168",
         "Monde": "Sohar",
         "Sephirah": "Chokmah",
