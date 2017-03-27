@@ -502,8 +502,8 @@
         "Ka": 8,
         "Portée": "Kabbaliste",
         "Durée": "-",
-        "Effet": "Faire revenir 1 souvenir oublié, Soigner 3 blessures, Soigner puce blessure Orichalque : 1 Feu/Terre, 2 Lune/Air, 3 Eau",
-        "Aspect": "Invoc près d'une étendue d'eau importante"
+        "Effet": "Faire revenir 1 souvenir oublié. Soigner 3 blessures. Soigner blessure Orichalque de moins d'une semaine selon Ka dominant : hydrim jusqu'à 3 puces, neutres eau 2 puces et opposés eau 1 puce",
+        "Aspect": "Grandes femmes au corps fin & luisant. Invoc près d'une étendue d'eau importante"
     },
     {
         "Cercle": "1 - Sceaux",
@@ -1936,5 +1936,96 @@
         "Effet": "Opposition KAD vs Ka-élément le plus faible. Jusqu'à réussite : Cruxim majeur & perte de [dé KAD - 4] puces temporaires d'INI",
         "Aspect": "Tourbillon longiligne au sein duquel on peut voir les visages terrorisés de ses victimes",
         "mj": false
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Feu",
+        "Sort": "Enfants rieurs des flèches de Cinah",
+        "Page": "LdJ 179",
+        "Monde": "Meborack",
+        "Sephirah": "Binah",
+        "Ka": 19,
+        "Portée": "1 (im)mortel",
+        "Durée": "1 semaine",
+        "Effet": "Fait tomber amoureux une cible pointée du doigt par le kabbaliste. La cible doit résister avec KAD FD 7",
+        "Aspect": "petits cherubins enjoués armés d'un arc et d'un carquois en or"
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Feu",
+        "Sort": "Sabathiel, l’Apothicaire du Palais des délices",
+        "Page": "LdJ 180",
+        "Monde": "Pachad",
+        "Sephirah": "Chokmah",
+        "Ka": 23,
+        "Portée": "1 nephilim",
+        "Durée": "immédiat",
+        "Effet": "Guérit les pertes temporaires de Ka causées par le Khaïba ou le KLN à hauteur de 2 puces grâce à un brouet malodorant",
+        "Aspect": "Vieillard avec visage couvert de tatouages pourpres & portant malette en cuir"
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Lune",
+        "Sort": "Porteurs de flamme de vie",
+        "Page": "LdJ 181",
+        "Monde": "Aresh",
+        "Sephirah": "Binah",
+        "Ka": 17,
+        "Portée": "1 mort",
+        "Durée": "1 semaine",
+        "Effet": "Ressuscite un mort en 6 jours qui dure ensuite un jour. Souvenirs fragmentés, Traits identiques, pas de magie. Intelligent, sans volonté, aux ordres du kabbaliste",
+        "Aspect": "Feux follets contenant des silhouettes de femmes édentées"
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Lune",
+        "Sort": "Grand architecte, Constructeur de palais sublimes",
+        "Page": "LdJ 184",
+        "Monde": "Meborack",
+        "Sephirah": "Chokmah",
+        "Ka": 21,
+        "Portée": "ouverture",
+        "Durée": "jusqu'à l'aube",
+        "Effet": "Construit un Akasha selon l'image mentale du Kabbaliste. Aménagé & embelli avec goût",
+        "Aspect": "Lézard doré habillé d'une tunique et d'un manteau grecques"
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Lune",
+        "Sort": "Rôdeurs qui suintent des murs",
+        "Page": "LdJ 188",
+        "Monde": "Sohar",
+        "Sephirah": "Binah",
+        "Ka": 18,
+        "Portée": "1 Bâtiment",
+        "Durée": "prochain lundi",
+        "Effet": "Hantent un lieu comme un poltergeist standard. Pour le Kabbaliste : visions & émotions du passé liées aux objets & alerté par toute intrusion",
+        "Aspect": "Un spectre"
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Terre",
+        "Sort": "Croix du pécheur, le poids de la souffrance du pénitent",
+        "Page": "LdM 223",
+        "Monde": "Zakaï",
+        "Sephirah": "Binah",
+        "Ka": 21,
+        "Portée": "humain, nephilim",
+        "Durée": "jusqu'à accomplissement",
+        "Effet": "Croix de bois (vision-ka) sur les épaules de la cible qui doit partir dans une quête spirituelle ou matérielle. Quête simple : gratuit, Chute « Facilement détourné » = sacrifice 1 puce",
+        "Aspect": "Homme vêtu d'une toge romaine avec le pouce baissé"
+    },
+    {
+        "Cercle": "3 – Clefs",
+        "Element": "Air",
+        "Sort": "Les sages aux manteaux d’ombres, de la montagne blanche d'au delà les rivages de brumes",
+        "Page": "LdM 168",
+        "Monde": "Sohar",
+        "Sephirah": "Chokmah",
+        "Ka": 24,
+        "Portée": "question",
+        "Durée": "réponse",
+        "Effet": "Révèlent au kabbaliste les connaissances de ses frères en stase, sans que cela nuisent à d'autres nephilim. Demandent toujours un service",
+        "Aspect": "Vieillards vigoureux dans un manteau sombre dont ne sortent que les avant-bras"
     }
 ]
