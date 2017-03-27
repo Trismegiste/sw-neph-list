@@ -1555,7 +1555,7 @@
         "Ka": 19,
         "Portée": "1 simulacre",
         "Durée": "-",
-        "Effet": "Simulacre d'un Neph n'ayant pas réintégré sa stase. Persécutent le meurtrier à jamais, ou jusqu'à réintégration de Stase (-1 TDD en Intellect et -1 en Charisme)",
+        "Effet": "Venge la mort d'un simulacre proche du kabbaliste et dont le Neph n'a pas encore réintégré sa stase. Persécutent le meurtrier à jamais, ou jusqu'à réintégration de Stase (-1 TDD en Intellect et -1 en Charisme)",
         "Aspect": "Femmes, traits ravagés par la douleur, vêtements en lambeaux, cheveux hérissés et clairsemés, ongles noirs et longs"
     },
     {
@@ -1569,7 +1569,7 @@
         "Portée": "-",
         "Durée": "Tâche",
         "Effet": "Peut montrer n'importe quel écrit réalisé sur Terre. Pas de Focus",
-        "Aspect": "Arbre immense, Tronc d'ébène, Feuilles en parchemion"
+        "Aspect": "Arbre immense, tronc d'ébène, feuilles en parchemins couverts de caractères"
     },
     {
         "Cercle": "3 - Clefs",
@@ -2010,9 +2010,9 @@
         "Monde": "Zakaï",
         "Sephirah": "Binah",
         "Ka": 21,
-        "Portée": "humain, nephilim",
+        "Portée": "1 (im)mortel",
         "Durée": "jusqu'à accomplissement",
-        "Effet": "Croix de bois (vision-ka) sur les épaules de la cible qui doit partir dans une quête spirituelle ou matérielle. Quête simple : gratuit, Chute « Facilement détourné » = sacrifice 1 puce",
+        "Effet": "Croix de bois (vision-ka) sur les épaules de la cible qui doit partir dans une quête spirituelle ou matérielle. Sacrifice puces selon quête : mission simple = 1 puce, Chute « Facilement détourné » = 2 puces",
         "Aspect": "Homme vêtu d'une toge romaine avec le pouce baissé"
     },
     {
