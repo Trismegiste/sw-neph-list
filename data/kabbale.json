@@ -580,7 +580,7 @@
         "Ka": 10,
         "Portée": "1 pers.",
         "Durée": "Mardi",
-        "Effet": "Fait dépérir psychologiquement la cible. Vigueur -1 TDD tous les 4 jours et 1 niveau de Fatigue constant pendant l'invoc. Vigueur<1d4  = Mort",
+        "Effet": "Fait dépérir psychologiquement la cible. Le lendemain matin de l'infection, la cible est Épuisé et jet de VIG inférieur ou égal à 1 = mort. Jet à refaire 3 fois à intervalle de 5 jours",
         "Aspect": "Guerriers armure complète, casque grec dans diamant brut"
     },
     {
