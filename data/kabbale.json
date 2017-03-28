@@ -827,7 +827,7 @@
         "Ka": 8,
         "Portée": "1 pers.",
         "Durée": "-",
-        "Effet": "Enferme une cible pour une durée au choix sans inconfort ni blessure. Reste consciente",
+        "Effet": "Peut entrer ou forcer une cible à entrer dans l'arbre pour une durée au choix sans inconfort ni blessure. Cible consciente. Faible reflet persistant",
         "Aspect": "Arbre de Cristal Translucide"
     },
     {
@@ -1126,7 +1126,7 @@
         "Ka": 7,
         "Portée": "Kabbaliste",
         "Durée": "2 Tâches",
-        "Effet": "+1 TDD sur les jets de traits lié à l'Eau (cf métabonus) ou Relancer 1 test d'un Trait d'Eau (disparait ensuite)",
+        "Effet": "Cumulable: +1 TDD sur les jets de traits lié à l'Eau (cf métabonus) ou Relancer 1 test d'un Trait d'Eau (disparait ensuite)",
         "Aspect": "2 lutins, habits couleurs criardes"
     },
     {
