@@ -392,7 +392,7 @@
         "Page": "218",
         "Portée": "1 hectare",
         "Durée": "1 semaine",
-        "Effet": "Tournesols poussent en 1 semaine. Crée un Plexus de Feu en les brûlant",
+        "Effet": "Tournesols poussent en 1 semaine. Crée un Plexus de Feu en les brûlant. Puissance 12",
         "Aspect": "Gland ambré qu'il faut planter dans un champ pour avoir des tournesols chargés en Ka-feu, Il faudra bruler ces derniers"
     },
     {
@@ -766,7 +766,7 @@
         "Page": "156",
         "Portée": "1 région",
         "Durée": "1 mois",
-        "Effet": "Pluie battante pendant 1 mois. Plexus d'eau chaque Mercredi pendant la pluie",
+        "Effet": "Pluie battante pendant 1 mois. Plexus d'eau chaque Mercredi pendant la pluie. Puissance 12",
         "Aspect": "Métal si léger qu'il semble vouloir s'envoler"
     },
     {
@@ -1492,7 +1492,7 @@
         "Page": "52",
         "Portée": "1 région",
         "Durée": "28 jours",
-        "Effet": "Inverse vie jour/nuit, sains d'esprits/fous, Plexus Lunaires importants, attire effets-Dragons Lune et Selenim",
+        "Effet": "Inverse vie jour/nuit, sains d'esprits/fous, Plexus Lunaires importants, attire effets-dragon Lune et Selenim",
         "Aspect": "Doit s'opérer à la faveur d'une éclipse"
     },
     {

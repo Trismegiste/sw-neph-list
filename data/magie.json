@@ -381,7 +381,7 @@
         "Élément": "Eau",
         "Chaîne": "Commerce > Denier > Synarque",
         "Cible": "zone",
-        "effet": "Projette un synarque dans la zone : dégâts KAD+1d4 (+1d6)"
+        "effet": "Projette un synarque dans la zone : dégâts 2d8 (+1d6)"
     },
     {
         "Cercle": 2,
@@ -445,7 +445,7 @@
         "Élément": "Feu",
         "Chaîne": "Épée > Myste",
         "Cible": "zone",
-        "effet": "Projette un myste dans la zone : dégâts KAD+1d4 (+1d6)"
+        "effet": "Projette un myste dans la zone : dégâts 2d8 (+1d6)"
     },
     {
         "Cercle": 2,
@@ -581,7 +581,7 @@
         "Élément": "Lune",
         "Chaîne": "Mystère > Myste",
         "Cible": "zone",
-        "effet": "Projette un myste dans la zone : dégâts KAD+1d4 (+1d6)"
+        "effet": "Projette un myste dans la zone : dégâts 2d8 (+1d6)"
     },
     {
         "Cercle": 2,
@@ -597,7 +597,7 @@
         "Élément": "Terre",
         "Chaîne": "Bâton > Templier",
         "Cible": "zone",
-        "effet": "Projette un templier dans la zone : dégâts KAD+1d4 (+1d6)"
+        "effet": "Projette un templier dans la zone : dégâts 2d8 (+1d6)"
     },
     {
         "Cercle": 2,
@@ -613,7 +613,7 @@
         "Élément": "Terre",
         "Chaîne": "Flore > Arbre",
         "Cible": "zone",
-        "effet": "Déplace un arbre dans la zone : dégâts KAD+1d4 (+1d6)."
+        "effet": "Déplace un arbre dans la zone : dégâts 2d8 (+1d6)."
     },
     {
         "Cercle": 2,
@@ -629,7 +629,7 @@
         "Élément": "Terre",
         "Chaîne": "Récipient > Coupe > R+C",
         "Cible": "zone",
-        "effet": "Projette un R+C dans la zone : dégâts KAD+1d4 (+1d6)"
+        "effet": "Projette un R+C dans la zone : dégâts 2d8 (+1d6)"
     },
     {
         "Cercle": 2,
