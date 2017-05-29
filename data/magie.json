@@ -291,9 +291,9 @@
         "Cercle": 2,
         "verbe": "Amplifie",
         "Élément": "Air",
-        "Chaîne": "Linguistique",
+        "Chaîne": "Linguistique > Langue...",
         "Cible": "cible",
-        "effet": "Amplifie les capacités de compréhension d'une langue à ses dérivées proches (dialecte, version antique…)"
+        "effet": "+1(+2) TDD sur la Compétence de Langue (précisée lors du sortilège)"
     },
     {
         "Cercle": 2,
