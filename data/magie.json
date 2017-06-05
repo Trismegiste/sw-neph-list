@@ -521,6 +521,14 @@
     },
     {
         "Cercle": 2,
+        "verbe": "Amplifie",
+        "Élément": "Terre",
+        "Chaîne": "Calme > Tête froide",
+        "Cible": "1 cible",
+        "effet": "Donne l'atout Tête froide (2 cartes d'init)"
+    },
+    {
+        "Cercle": 2,
         "verbe": "Augmente",
         "Élément": "Feu",
         "Chaîne": "Renouveau > Régénération",
