@@ -762,7 +762,7 @@
         "Ka": 4,
         "Portée": "1 pers.",
         "Durée": "3 tours",
-        "Effet": "Cible a l'impression d'être prisonnière d'un puits sans fond, dans un tourbillon d'air, pdt 3 tours",
+        "Effet": "Cible a l'impression d'être prisonnière d'un puits sans fond, dans un tourbillon d'air, pdt 3 tours. Pas d'interaction dans les 2 sens",
         "Aspect": "Nuée de papillons aux ailes noires"
     },
     {
