@@ -798,5 +798,13 @@
         "Chaîne": "Peur",
         "Cible": "cible",
         "effet": "L'être vivant ciblé est pris de panique. Sa réaction est variable (cf SW page 150)"
+    },
+    {
+        "Cercle": 3,
+        "verbe": "Crée",
+        "Élément": "Tous",
+        "Chaîne": "Glaive-élémentaire-de-Ka",
+        "Cible": "-",
+        "effet": "Créé un glaive élémentaire à 2 mains FOR+d8+2 / 2×KAD+2. Le Ka est choisi au lancement du sort"
     }
 ]
