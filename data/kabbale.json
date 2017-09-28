@@ -1807,7 +1807,7 @@
         "Ka": 18,
         "Portée": "-",
         "Durée": "-",
-        "Effet": "Fille de l'épée de Gabriel. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
+        "Effet": "Fille de l'épée de Gabriel. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d12 magique",
         "Aspect": "Épée de couleur argent",
         "mj": true
     },
@@ -1821,7 +1821,7 @@
         "Ka": 18,
         "Portée": "-",
         "Durée": "-",
-        "Effet": "Fille de l'épée de Michael. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
+        "Effet": "Fille de l'épée de Michael. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d12 magique",
         "Aspect": "Épée vert lumineux qui vire quelquefois au noir",
         "mj": true
     },
@@ -1835,7 +1835,7 @@
         "Ka": 18,
         "Portée": "-",
         "Durée": "-",
-        "Effet": "Fille de l'épée de Sandolphan. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
+        "Effet": "Fille de l'épée de Sandolphan. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d12 magique",
         "Aspect": "Épée de couleur bleue intense",
         "mj": true
     },
@@ -1849,7 +1849,7 @@
         "Ka": 18,
         "Portée": "-",
         "Durée": "-",
-        "Effet": "Fille de l'épée de Raphaël. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
+        "Effet": "Fille de l'épée de Raphaël. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d12 magique",
         "Aspect": "Épée qui luit de mille couleurs chatoyantes",
         "mj": true
     },
@@ -1863,7 +1863,7 @@
         "Ka": 18,
         "Portée": "-",
         "Durée": "-",
-        "Effet": "Fille de l'épée de Ariel. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d10 magique",
+        "Effet": "Fille de l'épée de Ariel. Cette arme peut étudier la puissance de Ka d'une cible (à vue) par rapport à son propre Ka-élément. 2D10 physique et 2d12 magique",
         "Aspect": "Épée de couleur verte avec des reflets dorés",
         "mj": true
     },
