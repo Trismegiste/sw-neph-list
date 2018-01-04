@@ -1425,7 +1425,7 @@
         "Ka": 14,
         "Portée": "Kabbaliste",
         "Durée": "Combat",
-        "Effet": "Possède le Kabbaliste pour 1 combat : Blessures par tranche de 6, Pas de malus de blessure, +1 dégâts. Pas de déf ni déf totale. Pas de Tir. A la fin : termine en état critique de Soif",
+        "Effet": "Possède le Kabbaliste pour 1 combat : Blessures par tranche de 8, Pas de malus de blessure, +1 dégâts. Pas de déf ni déf totale. Pas de Tir ni de cumul avec d'autres possessions. A la fin : termine en état critique de Soif",
         "Aspect": "Apparence du Métamorphe du Kabbaliste"
     },
     {
@@ -1698,7 +1698,7 @@
         "Ka": 20,
         "Portée": "1 cible",
         "Durée": "Définitif",
-        "Effet": "Inflige une maladie à pustules. VIG FD 7 pour résister",
+        "Effet": "Inflige une maladie à pustules. VIG FD 8 pour résister",
         "Aspect": "capuchon rapiécé, robe de bure informe et crécerelle"
     },
     {
